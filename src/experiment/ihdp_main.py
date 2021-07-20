@@ -6,7 +6,7 @@ import tensorflow as tf
 from sklearn.preprocessing import StandardScaler
 from sklearn.model_selection import train_test_split
 import keras.backend as K
-from keras.optimizers import rmsprop, SGD, Adam
+from keras.optimizers import SGD, Adam
 from keras.callbacks import EarlyStopping, ModelCheckpoint, TensorBoard, ReduceLROnPlateau, TerminateOnNaN
 from experiment.idhp_data import *
 
@@ -54,10 +54,11 @@ def train_and_predict_dragons(t, y_unscaled, x, targeted_regularization=True, ou
     # for reporducing the IHDP experimemt
 
     i = 0
-    tf.random.set_random_seed(i)
+    #tf.random.set_random_seed(i)
+    tf.random.set_seed(i)
     np.random.seed(i)
-    train_index, test_index = train_test_split(np.arange(x.shape[0]), test_size=0, random_state=1)
-    test_index = train_index
+    train_index, test_index = train_test_split(np.arange(x.shape[0]), test_size=val_split, random_state=1)
+    #test_index = train_index
 
     x_train, x_test = x[train_index], x[test_index]
     y_train, y_test = y[train_index], y[test_index]
@@ -238,6 +239,7 @@ def run_ihdp(data_base_dir='/Users/claudiashi/data/ihdp_csv', output_dir='~/resu
     simulation_files = sorted(glob.glob("{}/*.csv".format(data_base_dir)))
 
     for idx, simulation_file in enumerate(simulation_files):
+        print("++++",idx,"/",len(simulation_file),"--->",simulation_file)
 
         simulation_output_dir = os.path.join(output_dir, str(idx))
 
