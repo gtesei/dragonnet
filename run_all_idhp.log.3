@@ -1,0 +1,1644 @@
+******************** run_ihdp ***********************
+dragonnet
+2021-07-21 20:04:55.364160: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudart.so.10.1
+2021-07-21 20:04:57.734295: I tensorflow/compiler/jit/xla_cpu_device.cc:41] Not creating XLA devices, tf_xla_enable_xla_devices not set
+2021-07-21 20:04:57.735413: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcuda.so.1
+2021-07-21 20:04:57.786708: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1720] Found device 0 with properties: 
+pciBusID: 0000:3d:00.0 name: TITAN RTX computeCapability: 7.5
+coreClock: 1.77GHz coreCount: 72 deviceMemorySize: 23.65GiB deviceMemoryBandwidth: 625.94GiB/s
+2021-07-21 20:04:57.788376: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1720] Found device 1 with properties: 
+pciBusID: 0000:3e:00.0 name: TITAN RTX computeCapability: 7.5
+coreClock: 1.77GHz coreCount: 72 deviceMemorySize: 23.65GiB deviceMemoryBandwidth: 625.94GiB/s
+2021-07-21 20:04:57.789884: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1720] Found device 2 with properties: 
+pciBusID: 0000:3f:00.0 name: TITAN RTX computeCapability: 7.5
+coreClock: 1.77GHz coreCount: 72 deviceMemorySize: 23.65GiB deviceMemoryBandwidth: 625.94GiB/s
+2021-07-21 20:04:57.791470: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1720] Found device 3 with properties: 
+pciBusID: 0000:40:00.0 name: TITAN RTX computeCapability: 7.5
+coreClock: 1.77GHz coreCount: 72 deviceMemorySize: 23.65GiB deviceMemoryBandwidth: 625.94GiB/s
+2021-07-21 20:04:57.793102: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1720] Found device 4 with properties: 
+pciBusID: 0000:60:00.0 name: TITAN RTX computeCapability: 7.5
+coreClock: 1.77GHz coreCount: 72 deviceMemorySize: 23.65GiB deviceMemoryBandwidth: 625.94GiB/s
+2021-07-21 20:04:57.794750: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1720] Found device 5 with properties: 
+pciBusID: 0000:61:00.0 name: TITAN RTX computeCapability: 7.5
+coreClock: 1.77GHz coreCount: 72 deviceMemorySize: 23.65GiB deviceMemoryBandwidth: 625.94GiB/s
+2021-07-21 20:04:57.796385: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1720] Found device 6 with properties: 
+pciBusID: 0000:62:00.0 name: TITAN RTX computeCapability: 7.5
+coreClock: 1.77GHz coreCount: 72 deviceMemorySize: 23.65GiB deviceMemoryBandwidth: 625.94GiB/s
+2021-07-21 20:04:57.798032: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1720] Found device 7 with properties: 
+pciBusID: 0000:63:00.0 name: TITAN RTX computeCapability: 7.5
+coreClock: 1.77GHz coreCount: 72 deviceMemorySize: 23.65GiB deviceMemoryBandwidth: 625.94GiB/s
+2021-07-21 20:04:57.798055: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudart.so.10.1
+2021-07-21 20:04:57.806816: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcublas.so.10
+2021-07-21 20:04:57.806880: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcublasLt.so.10
+2021-07-21 20:04:57.810370: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcufft.so.10
+2021-07-21 20:04:57.813365: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcurand.so.10
+2021-07-21 20:04:57.818074: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcusolver.so.10
+2021-07-21 20:04:57.820336: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcusparse.so.10
+2021-07-21 20:04:57.860751: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudnn.so.7
+2021-07-21 20:04:57.899547: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1862] Adding visible gpu devices: 0, 1, 2, 3, 4, 5, 6, 7
+2021-07-21 20:04:57.899902: I tensorflow/core/platform/cpu_feature_guard.cc:142] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  SSE4.1 SSE4.2 AVX AVX2 AVX512F FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2021-07-21 20:04:59.299937: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1720] Found device 0 with properties: 
+pciBusID: 0000:3d:00.0 name: TITAN RTX computeCapability: 7.5
+coreClock: 1.77GHz coreCount: 72 deviceMemorySize: 23.65GiB deviceMemoryBandwidth: 625.94GiB/s
+2021-07-21 20:04:59.301512: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1720] Found device 1 with properties: 
+pciBusID: 0000:3e:00.0 name: TITAN RTX computeCapability: 7.5
+coreClock: 1.77GHz coreCount: 72 deviceMemorySize: 23.65GiB deviceMemoryBandwidth: 625.94GiB/s
+2021-07-21 20:04:59.303026: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1720] Found device 2 with properties: 
+pciBusID: 0000:3f:00.0 name: TITAN RTX computeCapability: 7.5
+coreClock: 1.77GHz coreCount: 72 deviceMemorySize: 23.65GiB deviceMemoryBandwidth: 625.94GiB/s
+2021-07-21 20:04:59.304547: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1720] Found device 3 with properties: 
+pciBusID: 0000:40:00.0 name: TITAN RTX computeCapability: 7.5
+coreClock: 1.77GHz coreCount: 72 deviceMemorySize: 23.65GiB deviceMemoryBandwidth: 625.94GiB/s
+2021-07-21 20:04:59.306070: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1720] Found device 4 with properties: 
+pciBusID: 0000:60:00.0 name: TITAN RTX computeCapability: 7.5
+coreClock: 1.77GHz coreCount: 72 deviceMemorySize: 23.65GiB deviceMemoryBandwidth: 625.94GiB/s
+2021-07-21 20:04:59.307559: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1720] Found device 5 with properties: 
+pciBusID: 0000:61:00.0 name: TITAN RTX computeCapability: 7.5
+coreClock: 1.77GHz coreCount: 72 deviceMemorySize: 23.65GiB deviceMemoryBandwidth: 625.94GiB/s
+2021-07-21 20:04:59.309074: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1720] Found device 6 with properties: 
+pciBusID: 0000:62:00.0 name: TITAN RTX computeCapability: 7.5
+coreClock: 1.77GHz coreCount: 72 deviceMemorySize: 23.65GiB deviceMemoryBandwidth: 625.94GiB/s
+2021-07-21 20:04:59.310577: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1720] Found device 7 with properties: 
+pciBusID: 0000:63:00.0 name: TITAN RTX computeCapability: 7.5
+coreClock: 1.77GHz coreCount: 72 deviceMemorySize: 23.65GiB deviceMemoryBandwidth: 625.94GiB/s
+2021-07-21 20:04:59.310602: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudart.so.10.1
+2021-07-21 20:04:59.310635: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcublas.so.10
+2021-07-21 20:04:59.310646: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcublasLt.so.10
+2021-07-21 20:04:59.310656: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcufft.so.10
+2021-07-21 20:04:59.310667: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcurand.so.10
+2021-07-21 20:04:59.310677: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcusolver.so.10
+2021-07-21 20:04:59.310688: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcusparse.so.10
+2021-07-21 20:04:59.310699: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudnn.so.7
+2021-07-21 20:04:59.334523: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1862] Adding visible gpu devices: 0, 1, 2, 3, 4, 5, 6, 7
+2021-07-21 20:04:59.334593: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudart.so.10.1
+2021-07-21 20:05:04.387162: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1261] Device interconnect StreamExecutor with strength 1 edge matrix:
+2021-07-21 20:05:04.387221: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1267]      0 1 2 3 4 5 6 7 
+2021-07-21 20:05:04.387241: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1280] 0:   N N Y N N N N N 
+2021-07-21 20:05:04.387247: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1280] 1:   N N N N N N N N 
+2021-07-21 20:05:04.387253: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1280] 2:   Y N N N N N N N 
+2021-07-21 20:05:04.387259: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1280] 3:   N N N N N N N N 
+2021-07-21 20:05:04.387264: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1280] 4:   N N N N N N N N 
+2021-07-21 20:05:04.387270: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1280] 5:   N N N N N N N Y 
+2021-07-21 20:05:04.387275: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1280] 6:   N N N N N N N N 
+2021-07-21 20:05:04.387281: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1280] 7:   N N N N N Y N N 
+2021-07-21 20:05:04.403109: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1406] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 22467 MB memory) -> physical GPU (device: 0, name: TITAN RTX, pci bus id: 0000:3d:00.0, compute capability: 7.5)
+2021-07-21 20:05:04.407391: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1406] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:1 with 22467 MB memory) -> physical GPU (device: 1, name: TITAN RTX, pci bus id: 0000:3e:00.0, compute capability: 7.5)
+2021-07-21 20:05:04.411377: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1406] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:2 with 22467 MB memory) -> physical GPU (device: 2, name: TITAN RTX, pci bus id: 0000:3f:00.0, compute capability: 7.5)
+2021-07-21 20:05:04.415132: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1406] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:3 with 22467 MB memory) -> physical GPU (device: 3, name: TITAN RTX, pci bus id: 0000:40:00.0, compute capability: 7.5)
+2021-07-21 20:05:04.419494: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1406] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:4 with 22467 MB memory) -> physical GPU (device: 4, name: TITAN RTX, pci bus id: 0000:60:00.0, compute capability: 7.5)
+2021-07-21 20:05:04.425542: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1406] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:5 with 21491 MB memory) -> physical GPU (device: 5, name: TITAN RTX, pci bus id: 0000:61:00.0, compute capability: 7.5)
+2021-07-21 20:05:04.429372: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1406] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:6 with 21491 MB memory) -> physical GPU (device: 6, name: TITAN RTX, pci bus id: 0000:62:00.0, compute capability: 7.5)
+2021-07-21 20:05:04.433353: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1406] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:7 with 21491 MB memory) -> physical GPU (device: 7, name: TITAN RTX, pci bus id: 0000:63:00.0, compute capability: 7.5)
+2021-07-21 20:05:04.434079: I tensorflow/compiler/jit/xla_gpu_device.cc:99] Not creating XLA devices, tf_xla_enable_xla_devices not set
+WARNING:tensorflow:AutoGraph could not transform <bound method EpsilonLayer.call of <experiment.models.EpsilonLayer object at 0x7f3352d618e0>> and will run it as-is.
+Please report this to the TensorFlow team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output.
+Cause: module 'gast' has no attribute 'Index'
+To silence this warning, decorate the function with @tf.autograph.experimental.do_not_convert
+the dragon is dragonnet
+++++ 0 / 62 ---> /local_home/ag62216/var/dragonnet/dat/ihdp/csv/ihdp_npci_1.csv
+Is targeted regularization: True
+I am here making dragonnet
+2021-07-21 20:05:05.074728: I tensorflow/compiler/mlir/mlir_graph_optimization_pass.cc:116] None of the MLIR optimization passes are enabled (registered 2)
+2021-07-21 20:05:05.095145: I tensorflow/core/platform/profile_utils/cpu_utils.cc:112] CPU Frequency: 2400000000 Hz
+WARNING:tensorflow:AutoGraph could not transform <function make_tarreg_loss.<locals>.tarreg_ATE_unbounded_domain_loss at 0x7f3352d5ac10> and will run it as-is.
+Please report this to the TensorFlow team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output.
+Cause: module 'gast' has no attribute 'Index'
+To silence this warning, decorate the function with @tf.autograph.experimental.do_not_convert
+WARNING:tensorflow:AutoGraph could not transform <function regression_loss at 0x7f335657b940> and will run it as-is.
+Please report this to the TensorFlow team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output.
+Cause: module 'gast' has no attribute 'Index'
+To silence this warning, decorate the function with @tf.autograph.experimental.do_not_convert
+WARNING:tensorflow:AutoGraph could not transform <function binary_classification_loss at 0x7f33a6d8cc10> and will run it as-is.
+Please report this to the TensorFlow team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output.
+Cause: module 'gast' has no attribute 'Index'
+To silence this warning, decorate the function with @tf.autograph.experimental.do_not_convert
+WARNING:tensorflow:AutoGraph could not transform <function treatment_accuracy at 0x7f33565a84c0> and will run it as-is.
+Please report this to the TensorFlow team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output.
+Cause: module 'gast' has no attribute 'Index'
+To silence this warning, decorate the function with @tf.autograph.experimental.do_not_convert
+WARNING:tensorflow:AutoGraph could not transform <function track_epsilon at 0x7f33565a8550> and will run it as-is.
+Please report this to the TensorFlow team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output.
+Cause: module 'gast' has no attribute 'Index'
+To silence this warning, decorate the function with @tf.autograph.experimental.do_not_convert
+2021-07-21 20:05:06.322832: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcublas.so.10
+WARNING:tensorflow:AutoGraph could not transform <function make_tarreg_loss.<locals>.tarreg_ATE_unbounded_domain_loss at 0x7f33400981f0> and will run it as-is.
+Please report this to the TensorFlow team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output.
+Cause: module 'gast' has no attribute 'Index'
+To silence this warning, decorate the function with @tf.autograph.experimental.do_not_convert
+***************************** elapsed_time is:  9.98454236984253
+TEST: average propensity for treated: 0.20060960948467255 and untreated: 0.15595726668834686
+TRAIN: average propensity for treated: 0.2433081418275833 and untreated: 0.1570388525724411
+Is targeted regularization: False
+I am here making dragonnet
+***************************** elapsed_time is:  9.533425331115723
+TEST: average propensity for treated: 0.19825878739356995 and untreated: 0.15261095762252808
+TRAIN: average propensity for treated: 0.24986808001995087 and untreated: 0.1536634862422943
+++++ 1 / 63 ---> /local_home/ag62216/var/dragonnet/dat/ihdp/csv/ihdp_npci_10.csv
+Is targeted regularization: True
+I am here making dragonnet
+WARNING:tensorflow:AutoGraph could not transform <function make_tarreg_loss.<locals>.tarreg_ATE_unbounded_domain_loss at 0x7f32c84f1040> and will run it as-is.
+Please report this to the TensorFlow team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output.
+Cause: module 'gast' has no attribute 'Index'
+To silence this warning, decorate the function with @tf.autograph.experimental.do_not_convert
+***************************** elapsed_time is:  24.2788348197937
+TEST: average propensity for treated: 0.18503426015377045 and untreated: 0.14739851653575897
+TRAIN: average propensity for treated: 0.24263069033622742 and untreated: 0.15243053436279297
+Is targeted regularization: False
+I am here making dragonnet
+***************************** elapsed_time is:  20.394994735717773
+TEST: average propensity for treated: 0.19420425593852997 and untreated: 0.1450832486152649
+TRAIN: average propensity for treated: 0.2613512873649597 and untreated: 0.14871199429035187
+++++ 2 / 63 ---> /local_home/ag62216/var/dragonnet/dat/ihdp/csv/ihdp_npci_11.csv
+Is targeted regularization: True
+I am here making dragonnet
+WARNING:tensorflow:AutoGraph could not transform <function make_tarreg_loss.<locals>.tarreg_ATE_unbounded_domain_loss at 0x7f332c073c10> and will run it as-is.
+Please report this to the TensorFlow team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output.
+Cause: module 'gast' has no attribute 'Index'
+To silence this warning, decorate the function with @tf.autograph.experimental.do_not_convert
+***************************** elapsed_time is:  19.092769861221313
+TEST: average propensity for treated: 0.18960623443126678 and untreated: 0.14870119094848633
+TRAIN: average propensity for treated: 0.24776986241340637 and untreated: 0.15168419480323792
+Is targeted regularization: False
+I am here making dragonnet
+***************************** elapsed_time is:  15.302997589111328
+TEST: average propensity for treated: 0.19671602547168732 and untreated: 0.14544644951820374
+TRAIN: average propensity for treated: 0.26424747705459595 and untreated: 0.14810842275619507
+++++ 3 / 63 ---> /local_home/ag62216/var/dragonnet/dat/ihdp/csv/ihdp_npci_12.csv
+Is targeted regularization: True
+I am here making dragonnet
+WARNING:tensorflow:AutoGraph could not transform <function make_tarreg_loss.<locals>.tarreg_ATE_unbounded_domain_loss at 0x7f332c073670> and will run it as-is.
+Please report this to the TensorFlow team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output.
+Cause: module 'gast' has no attribute 'Index'
+To silence this warning, decorate the function with @tf.autograph.experimental.do_not_convert
+***************************** elapsed_time is:  16.686094045639038
+TEST: average propensity for treated: 0.19396457076072693 and untreated: 0.14649882912635803
+TRAIN: average propensity for treated: 0.25999489426612854 and untreated: 0.14878375828266144
+Is targeted regularization: False
+I am here making dragonnet
+***************************** elapsed_time is:  16.71422815322876
+TEST: average propensity for treated: 0.1967964917421341 and untreated: 0.1456960290670395
+TRAIN: average propensity for treated: 0.2642492651939392 and untreated: 0.14744874835014343
+++++ 4 / 63 ---> /local_home/ag62216/var/dragonnet/dat/ihdp/csv/ihdp_npci_13.csv
+Is targeted regularization: True
+I am here making dragonnet
+WARNING:tensorflow:AutoGraph could not transform <function make_tarreg_loss.<locals>.tarreg_ATE_unbounded_domain_loss at 0x7f332c073c10> and will run it as-is.
+Please report this to the TensorFlow team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output.
+Cause: module 'gast' has no attribute 'Index'
+To silence this warning, decorate the function with @tf.autograph.experimental.do_not_convert
+***************************** elapsed_time is:  17.831727504730225
+TEST: average propensity for treated: 0.18340091407299042 and untreated: 0.15117605030536652
+TRAIN: average propensity for treated: 0.2273590862751007 and untreated: 0.15217414498329163
+Is targeted regularization: False
+I am here making dragonnet
+***************************** elapsed_time is:  20.383326768875122
+TEST: average propensity for treated: 0.1919592022895813 and untreated: 0.14852513372898102
+TRAIN: average propensity for treated: 0.25287768244743347 and untreated: 0.14881211519241333
+++++ 5 / 63 ---> /local_home/ag62216/var/dragonnet/dat/ihdp/csv/ihdp_npci_14.csv
+Is targeted regularization: True
+I am here making dragonnet
+WARNING:tensorflow:AutoGraph could not transform <function make_tarreg_loss.<locals>.tarreg_ATE_unbounded_domain_loss at 0x7f3352d5a040> and will run it as-is.
+Please report this to the TensorFlow team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output.
+Cause: module 'gast' has no attribute 'Index'
+To silence this warning, decorate the function with @tf.autograph.experimental.do_not_convert
+***************************** elapsed_time is:  12.106404542922974
+TEST: average propensity for treated: 0.19511577486991882 and untreated: 0.15206007659435272
+TRAIN: average propensity for treated: 0.24025145173072815 and untreated: 0.15642648935317993
+Is targeted regularization: False
+I am here making dragonnet
+***************************** elapsed_time is:  14.37435793876648
+TEST: average propensity for treated: 0.20356567203998566 and untreated: 0.1466793715953827
+TRAIN: average propensity for treated: 0.2630431056022644 and untreated: 0.15042158961296082
+++++ 6 / 63 ---> /local_home/ag62216/var/dragonnet/dat/ihdp/csv/ihdp_npci_15.csv
+Is targeted regularization: True
+I am here making dragonnet
+WARNING:tensorflow:AutoGraph could not transform <function make_tarreg_loss.<locals>.tarreg_ATE_unbounded_domain_loss at 0x7f32e8185700> and will run it as-is.
+Please report this to the TensorFlow team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output.
+Cause: module 'gast' has no attribute 'Index'
+To silence this warning, decorate the function with @tf.autograph.experimental.do_not_convert
+***************************** elapsed_time is:  13.275691032409668
+TEST: average propensity for treated: 0.19291888177394867 and untreated: 0.14981961250305176
+TRAIN: average propensity for treated: 0.23675592243671417 and untreated: 0.15447667241096497
+Is targeted regularization: False
+I am here making dragonnet
+***************************** elapsed_time is:  12.151698589324951
+TEST: average propensity for treated: 0.19883057475090027 and untreated: 0.14806264638900757
+TRAIN: average propensity for treated: 0.24775072932243347 and untreated: 0.15166746079921722
+++++ 7 / 63 ---> /local_home/ag62216/var/dragonnet/dat/ihdp/csv/ihdp_npci_16.csv
+Is targeted regularization: True
+I am here making dragonnet
+WARNING:tensorflow:AutoGraph could not transform <function make_tarreg_loss.<locals>.tarreg_ATE_unbounded_domain_loss at 0x7f32c80afc10> and will run it as-is.
+Please report this to the TensorFlow team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output.
+Cause: module 'gast' has no attribute 'Index'
+To silence this warning, decorate the function with @tf.autograph.experimental.do_not_convert
+***************************** elapsed_time is:  13.189190149307251
+TEST: average propensity for treated: 0.19121725857257843 and untreated: 0.1477953940629959
+TRAIN: average propensity for treated: 0.25464561581611633 and untreated: 0.150737926363945
+Is targeted regularization: False
+I am here making dragonnet
+***************************** elapsed_time is:  9.033957958221436
+TEST: average propensity for treated: 0.1960146725177765 and untreated: 0.1466425210237503
+TRAIN: average propensity for treated: 0.26085224747657776 and untreated: 0.15005365014076233
+++++ 8 / 63 ---> /local_home/ag62216/var/dragonnet/dat/ihdp/csv/ihdp_npci_17.csv
+Is targeted regularization: True
+I am here making dragonnet
+WARNING:tensorflow:AutoGraph could not transform <function make_tarreg_loss.<locals>.tarreg_ATE_unbounded_domain_loss at 0x7f32a026b280> and will run it as-is.
+Please report this to the TensorFlow team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output.
+Cause: module 'gast' has no attribute 'Index'
+To silence this warning, decorate the function with @tf.autograph.experimental.do_not_convert
+***************************** elapsed_time is:  16.79570174217224
+TEST: average propensity for treated: 0.20136095583438873 and untreated: 0.148201122879982
+TRAIN: average propensity for treated: 0.2580840587615967 and untreated: 0.14961668848991394
+Is targeted regularization: False
+I am here making dragonnet
+***************************** elapsed_time is:  9.33669662475586
+TEST: average propensity for treated: 0.1957886964082718 and untreated: 0.1526331901550293
+TRAIN: average propensity for treated: 0.24099867045879364 and untreated: 0.1533748358488083
+++++ 9 / 63 ---> /local_home/ag62216/var/dragonnet/dat/ihdp/csv/ihdp_npci_18.csv
+Is targeted regularization: True
+I am here making dragonnet
+WARNING:tensorflow:AutoGraph could not transform <function make_tarreg_loss.<locals>.tarreg_ATE_unbounded_domain_loss at 0x7f32a049e1f0> and will run it as-is.
+Please report this to the TensorFlow team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output.
+Cause: module 'gast' has no attribute 'Index'
+To silence this warning, decorate the function with @tf.autograph.experimental.do_not_convert
+***************************** elapsed_time is:  13.660590410232544
+TEST: average propensity for treated: 0.19274668395519257 and untreated: 0.15037737786769867
+TRAIN: average propensity for treated: 0.24500101804733276 and untreated: 0.1534152626991272
+Is targeted regularization: False
+I am here making dragonnet
+***************************** elapsed_time is:  8.80939245223999
+TEST: average propensity for treated: 0.20042137801647186 and untreated: 0.1469753086566925
+TRAIN: average propensity for treated: 0.2643091678619385 and untreated: 0.14870542287826538
+++++ 10 / 63 ---> /local_home/ag62216/var/dragonnet/dat/ihdp/csv/ihdp_npci_19.csv
+Is targeted regularization: True
+I am here making dragonnet
+WARNING:tensorflow:AutoGraph could not transform <function make_tarreg_loss.<locals>.tarreg_ATE_unbounded_domain_loss at 0x7f32a04f5c10> and will run it as-is.
+Please report this to the TensorFlow team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output.
+Cause: module 'gast' has no attribute 'Index'
+To silence this warning, decorate the function with @tf.autograph.experimental.do_not_convert
+***************************** elapsed_time is:  10.71625828742981
+TEST: average propensity for treated: 0.1935366690158844 and untreated: 0.15536387264728546
+TRAIN: average propensity for treated: 0.23230761289596558 and untreated: 0.15728859603405
+Is targeted regularization: False
+I am here making dragonnet
+***************************** elapsed_time is:  11.507708072662354
+TEST: average propensity for treated: 0.20161323249340057 and untreated: 0.15030792355537415
+TRAIN: average propensity for treated: 0.25429844856262207 and untreated: 0.1519908308982849
+++++ 11 / 62 ---> /local_home/ag62216/var/dragonnet/dat/ihdp/csv/ihdp_npci_2.csv
+Is targeted regularization: True
+I am here making dragonnet
+WARNING:tensorflow:AutoGraph could not transform <function make_tarreg_loss.<locals>.tarreg_ATE_unbounded_domain_loss at 0x7f32a07a91f0> and will run it as-is.
+Please report this to the TensorFlow team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output.
+Cause: module 'gast' has no attribute 'Index'
+To silence this warning, decorate the function with @tf.autograph.experimental.do_not_convert
+***************************** elapsed_time is:  9.46666669845581
+TEST: average propensity for treated: 0.1955881118774414 and untreated: 0.15000440180301666
+TRAIN: average propensity for treated: 0.24339790642261505 and untreated: 0.15477687120437622
+Is targeted regularization: False
+I am here making dragonnet
+***************************** elapsed_time is:  9.735454320907593
+TEST: average propensity for treated: 0.2027270346879959 and untreated: 0.14643684029579163
+TRAIN: average propensity for treated: 0.26598256826400757 and untreated: 0.148799866437912
+++++ 12 / 63 ---> /local_home/ag62216/var/dragonnet/dat/ihdp/csv/ihdp_npci_20.csv
+Is targeted regularization: True
+I am here making dragonnet
+WARNING:tensorflow:AutoGraph could not transform <function make_tarreg_loss.<locals>.tarreg_ATE_unbounded_domain_loss at 0x7f3352d77dc0> and will run it as-is.
+Please report this to the TensorFlow team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output.
+Cause: module 'gast' has no attribute 'Index'
+To silence this warning, decorate the function with @tf.autograph.experimental.do_not_convert
+***************************** elapsed_time is:  16.425994396209717
+TEST: average propensity for treated: 0.19269539415836334 and untreated: 0.14836753904819489
+TRAIN: average propensity for treated: 0.2410619556903839 and untreated: 0.15418732166290283
+Is targeted regularization: False
+I am here making dragonnet
+***************************** elapsed_time is:  10.553903102874756
+TEST: average propensity for treated: 0.20092567801475525 and untreated: 0.14634697139263153
+TRAIN: average propensity for treated: 0.2609976828098297 and untreated: 0.1498938798904419
+++++ 13 / 63 ---> /local_home/ag62216/var/dragonnet/dat/ihdp/csv/ihdp_npci_21.csv
+Is targeted regularization: True
+I am here making dragonnet
+WARNING:tensorflow:AutoGraph could not transform <function make_tarreg_loss.<locals>.tarreg_ATE_unbounded_domain_loss at 0x7f332c0738b0> and will run it as-is.
+Please report this to the TensorFlow team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output.
+Cause: module 'gast' has no attribute 'Index'
+To silence this warning, decorate the function with @tf.autograph.experimental.do_not_convert
+***************************** elapsed_time is:  22.07434844970703
+TEST: average propensity for treated: 0.19183272123336792 and untreated: 0.15284624695777893
+TRAIN: average propensity for treated: 0.24092550575733185 and untreated: 0.1535780131816864
+Is targeted regularization: False
+I am here making dragonnet
+***************************** elapsed_time is:  19.814772129058838
+TEST: average propensity for treated: 0.19582511484622955 and untreated: 0.15280160307884216
+TRAIN: average propensity for treated: 0.2445121854543686 and untreated: 0.15345679223537445
+++++ 14 / 63 ---> /local_home/ag62216/var/dragonnet/dat/ihdp/csv/ihdp_npci_22.csv
+Is targeted regularization: True
+I am here making dragonnet
+WARNING:tensorflow:AutoGraph could not transform <function make_tarreg_loss.<locals>.tarreg_ATE_unbounded_domain_loss at 0x7f332c180a60> and will run it as-is.
+Please report this to the TensorFlow team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output.
+Cause: module 'gast' has no attribute 'Index'
+To silence this warning, decorate the function with @tf.autograph.experimental.do_not_convert
+***************************** elapsed_time is:  10.705252170562744
+TEST: average propensity for treated: 0.20609812438488007 and untreated: 0.15032096207141876
+TRAIN: average propensity for treated: 0.25822463631629944 and untreated: 0.15203656256198883
+Is targeted regularization: False
+I am here making dragonnet
+***************************** elapsed_time is:  12.758729457855225
+TEST: average propensity for treated: 0.2043611705303192 and untreated: 0.1517878919839859
+TRAIN: average propensity for treated: 0.2565400004386902 and untreated: 0.1516573280096054
+++++ 15 / 63 ---> /local_home/ag62216/var/dragonnet/dat/ihdp/csv/ihdp_npci_23.csv
+Is targeted regularization: True
+I am here making dragonnet
+WARNING:tensorflow:AutoGraph could not transform <function make_tarreg_loss.<locals>.tarreg_ATE_unbounded_domain_loss at 0x7f32c82bb5e0> and will run it as-is.
+Please report this to the TensorFlow team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output.
+Cause: module 'gast' has no attribute 'Index'
+To silence this warning, decorate the function with @tf.autograph.experimental.do_not_convert
+***************************** elapsed_time is:  15.80026364326477
+TEST: average propensity for treated: 0.19812555611133575 and untreated: 0.14694546163082123
+TRAIN: average propensity for treated: 0.2624060809612274 and untreated: 0.15014001727104187
+Is targeted regularization: False
+I am here making dragonnet
+***************************** elapsed_time is:  25.13746929168701
+TEST: average propensity for treated: 0.20237956941127777 and untreated: 0.1462133526802063
+TRAIN: average propensity for treated: 0.2670416235923767 and untreated: 0.148525208234787
+++++ 16 / 63 ---> /local_home/ag62216/var/dragonnet/dat/ihdp/csv/ihdp_npci_24.csv
+Is targeted regularization: True
+I am here making dragonnet
+WARNING:tensorflow:AutoGraph could not transform <function make_tarreg_loss.<locals>.tarreg_ATE_unbounded_domain_loss at 0x7f33530c60d0> and will run it as-is.
+Please report this to the TensorFlow team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output.
+Cause: module 'gast' has no attribute 'Index'
+To silence this warning, decorate the function with @tf.autograph.experimental.do_not_convert
+***************************** elapsed_time is:  11.739336967468262
+TEST: average propensity for treated: 0.1954738050699234 and untreated: 0.15019820630550385
+TRAIN: average propensity for treated: 0.2498498111963272 and untreated: 0.15079572796821594
+Is targeted regularization: False
+I am here making dragonnet
+***************************** elapsed_time is:  10.947218894958496
+TEST: average propensity for treated: 0.2010752558708191 and untreated: 0.14876191318035126
+TRAIN: average propensity for treated: 0.26254457235336304 and untreated: 0.1484232097864151
+++++ 17 / 63 ---> /local_home/ag62216/var/dragonnet/dat/ihdp/csv/ihdp_npci_25.csv
+Is targeted regularization: True
+I am here making dragonnet
+WARNING:tensorflow:AutoGraph could not transform <function make_tarreg_loss.<locals>.tarreg_ATE_unbounded_domain_loss at 0x7f3352d77dc0> and will run it as-is.
+Please report this to the TensorFlow team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output.
+Cause: module 'gast' has no attribute 'Index'
+To silence this warning, decorate the function with @tf.autograph.experimental.do_not_convert
+***************************** elapsed_time is:  11.64832329750061
+TEST: average propensity for treated: 0.19119742512702942 and untreated: 0.15621519088745117
+TRAIN: average propensity for treated: 0.22571799159049988 and untreated: 0.1581260859966278
+Is targeted regularization: False
+I am here making dragonnet
+***************************** elapsed_time is:  11.03177285194397
+TEST: average propensity for treated: 0.19863905012607574 and untreated: 0.15216168761253357
+TRAIN: average propensity for treated: 0.24767017364501953 and untreated: 0.1529894769191742
+++++ 18 / 63 ---> /local_home/ag62216/var/dragonnet/dat/ihdp/csv/ihdp_npci_26.csv
+Is targeted regularization: True
+I am here making dragonnet
+WARNING:tensorflow:AutoGraph could not transform <function make_tarreg_loss.<locals>.tarreg_ATE_unbounded_domain_loss at 0x7f32c859b3a0> and will run it as-is.
+Please report this to the TensorFlow team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output.
+Cause: module 'gast' has no attribute 'Index'
+To silence this warning, decorate the function with @tf.autograph.experimental.do_not_convert
+***************************** elapsed_time is:  14.473296880722046
+TEST: average propensity for treated: 0.19351612031459808 and untreated: 0.1547105312347412
+TRAIN: average propensity for treated: 0.23870347440242767 and untreated: 0.15569056570529938
+Is targeted regularization: False
+I am here making dragonnet
+***************************** elapsed_time is:  10.256819725036621
+TEST: average propensity for treated: 0.2014656513929367 and untreated: 0.14842316508293152
+TRAIN: average propensity for treated: 0.2640872299671173 and untreated: 0.14897379279136658
+++++ 19 / 63 ---> /local_home/ag62216/var/dragonnet/dat/ihdp/csv/ihdp_npci_27.csv
+Is targeted regularization: True
+I am here making dragonnet
+WARNING:tensorflow:AutoGraph could not transform <function make_tarreg_loss.<locals>.tarreg_ATE_unbounded_domain_loss at 0x7f332c05c550> and will run it as-is.
+Please report this to the TensorFlow team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output.
+Cause: module 'gast' has no attribute 'Index'
+To silence this warning, decorate the function with @tf.autograph.experimental.do_not_convert
+***************************** elapsed_time is:  11.488667249679565
+TEST: average propensity for treated: 0.19430296123027802 and untreated: 0.158516064286232
+TRAIN: average propensity for treated: 0.23403826355934143 and untreated: 0.1572735756635666
+Is targeted regularization: False
+I am here making dragonnet
+***************************** elapsed_time is:  9.201860189437866
+TEST: average propensity for treated: 0.19870296120643616 and untreated: 0.1548968106508255
+TRAIN: average propensity for treated: 0.24563783407211304 and untreated: 0.15432585775852203
+++++ 20 / 63 ---> /local_home/ag62216/var/dragonnet/dat/ihdp/csv/ihdp_npci_28.csv
+Is targeted regularization: True
+I am here making dragonnet
+WARNING:tensorflow:AutoGraph could not transform <function make_tarreg_loss.<locals>.tarreg_ATE_unbounded_domain_loss at 0x7f32c842e790> and will run it as-is.
+Please report this to the TensorFlow team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output.
+Cause: module 'gast' has no attribute 'Index'
+To silence this warning, decorate the function with @tf.autograph.experimental.do_not_convert
+***************************** elapsed_time is:  12.252508163452148
+TEST: average propensity for treated: 0.1869449019432068 and untreated: 0.14990010857582092
+TRAIN: average propensity for treated: 0.23833763599395752 and untreated: 0.15274429321289062
+Is targeted regularization: False
+I am here making dragonnet
+***************************** elapsed_time is:  10.632853269577026
+TEST: average propensity for treated: 0.19290107488632202 and untreated: 0.14915421605110168
+TRAIN: average propensity for treated: 0.24333743751049042 and untreated: 0.1501998007297516
+++++ 21 / 63 ---> /local_home/ag62216/var/dragonnet/dat/ihdp/csv/ihdp_npci_29.csv
+Is targeted regularization: True
+I am here making dragonnet
+WARNING:tensorflow:AutoGraph could not transform <function make_tarreg_loss.<locals>.tarreg_ATE_unbounded_domain_loss at 0x7f32c82bb9d0> and will run it as-is.
+Please report this to the TensorFlow team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output.
+Cause: module 'gast' has no attribute 'Index'
+To silence this warning, decorate the function with @tf.autograph.experimental.do_not_convert
+***************************** elapsed_time is:  13.796746730804443
+TEST: average propensity for treated: 0.1987159699201584 and untreated: 0.14958946406841278
+TRAIN: average propensity for treated: 0.26217976212501526 and untreated: 0.1498463749885559
+Is targeted regularization: False
+I am here making dragonnet
+***************************** elapsed_time is:  12.40831971168518
+TEST: average propensity for treated: 0.198654904961586 and untreated: 0.14925403892993927
+TRAIN: average propensity for treated: 0.2610638737678528 and untreated: 0.15053914487361908
+++++ 22 / 62 ---> /local_home/ag62216/var/dragonnet/dat/ihdp/csv/ihdp_npci_3.csv
+Is targeted regularization: True
+I am here making dragonnet
+WARNING:tensorflow:AutoGraph could not transform <function make_tarreg_loss.<locals>.tarreg_ATE_unbounded_domain_loss at 0x7f32c8187c10> and will run it as-is.
+Please report this to the TensorFlow team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output.
+Cause: module 'gast' has no attribute 'Index'
+To silence this warning, decorate the function with @tf.autograph.experimental.do_not_convert
+***************************** elapsed_time is:  10.505805730819702
+TEST: average propensity for treated: 0.1935141384601593 and untreated: 0.15629734098911285
+TRAIN: average propensity for treated: 0.2296655774116516 and untreated: 0.15870332717895508
+Is targeted regularization: False
+I am here making dragonnet
+***************************** elapsed_time is:  9.3902006149292
+TEST: average propensity for treated: 0.19839099049568176 and untreated: 0.15307042002677917
+TRAIN: average propensity for treated: 0.24309928715229034 and untreated: 0.15505392849445343
+++++ 23 / 63 ---> /local_home/ag62216/var/dragonnet/dat/ihdp/csv/ihdp_npci_30.csv
+Is targeted regularization: True
+I am here making dragonnet
+WARNING:tensorflow:AutoGraph could not transform <function make_tarreg_loss.<locals>.tarreg_ATE_unbounded_domain_loss at 0x7f32e805fee0> and will run it as-is.
+Please report this to the TensorFlow team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output.
+Cause: module 'gast' has no attribute 'Index'
+To silence this warning, decorate the function with @tf.autograph.experimental.do_not_convert
+***************************** elapsed_time is:  9.49844479560852
+TEST: average propensity for treated: 0.18982340395450592 and untreated: 0.1592147946357727
+TRAIN: average propensity for treated: 0.21903087198734283 and untreated: 0.15978828072547913
+Is targeted regularization: False
+I am here making dragonnet
+***************************** elapsed_time is:  11.837522029876709
+TEST: average propensity for treated: 0.19750359654426575 and untreated: 0.15522703528404236
+TRAIN: average propensity for treated: 0.2379455715417862 and untreated: 0.15523557364940643
+++++ 24 / 63 ---> /local_home/ag62216/var/dragonnet/dat/ihdp/csv/ihdp_npci_31.csv
+Is targeted regularization: True
+I am here making dragonnet
+WARNING:tensorflow:AutoGraph could not transform <function make_tarreg_loss.<locals>.tarreg_ATE_unbounded_domain_loss at 0x7f32c876f9d0> and will run it as-is.
+Please report this to the TensorFlow team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output.
+Cause: module 'gast' has no attribute 'Index'
+To silence this warning, decorate the function with @tf.autograph.experimental.do_not_convert
+***************************** elapsed_time is:  16.088481903076172
+TEST: average propensity for treated: 0.18957088887691498 and untreated: 0.154054656624794
+TRAIN: average propensity for treated: 0.2386426478624344 and untreated: 0.15559381246566772
+Is targeted regularization: False
+I am here making dragonnet
+***************************** elapsed_time is:  15.43395209312439
+TEST: average propensity for treated: 0.19613856077194214 and untreated: 0.14952605962753296
+TRAIN: average propensity for treated: 0.2582314908504486 and untreated: 0.15073396265506744
+++++ 25 / 63 ---> /local_home/ag62216/var/dragonnet/dat/ihdp/csv/ihdp_npci_32.csv
+Is targeted regularization: True
+I am here making dragonnet
+WARNING:tensorflow:AutoGraph could not transform <function make_tarreg_loss.<locals>.tarreg_ATE_unbounded_domain_loss at 0x7f332c0b9820> and will run it as-is.
+Please report this to the TensorFlow team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output.
+Cause: module 'gast' has no attribute 'Index'
+To silence this warning, decorate the function with @tf.autograph.experimental.do_not_convert
+***************************** elapsed_time is:  22.84602952003479
+TEST: average propensity for treated: 0.19939178228378296 and untreated: 0.1599026471376419
+TRAIN: average propensity for treated: 0.23180118203163147 and untreated: 0.16030138731002808
+Is targeted regularization: False
+I am here making dragonnet
+***************************** elapsed_time is:  24.61245369911194
+TEST: average propensity for treated: 0.20348374545574188 and untreated: 0.1534905880689621
+TRAIN: average propensity for treated: 0.2497451901435852 and untreated: 0.15437719225883484
+++++ 26 / 63 ---> /local_home/ag62216/var/dragonnet/dat/ihdp/csv/ihdp_npci_33.csv
+Is targeted regularization: True
+I am here making dragonnet
+WARNING:tensorflow:AutoGraph could not transform <function make_tarreg_loss.<locals>.tarreg_ATE_unbounded_domain_loss at 0x7f32f002d040> and will run it as-is.
+Please report this to the TensorFlow team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output.
+Cause: module 'gast' has no attribute 'Index'
+To silence this warning, decorate the function with @tf.autograph.experimental.do_not_convert
+***************************** elapsed_time is:  11.598879098892212
+TEST: average propensity for treated: 0.19396741688251495 and untreated: 0.1492830067873001
+TRAIN: average propensity for treated: 0.2461150735616684 and untreated: 0.15253201127052307
+Is targeted regularization: False
+I am here making dragonnet
+***************************** elapsed_time is:  12.30693244934082
+TEST: average propensity for treated: 0.20212359726428986 and untreated: 0.1458495557308197
+TRAIN: average propensity for treated: 0.265007883310318 and untreated: 0.14831459522247314
+++++ 27 / 63 ---> /local_home/ag62216/var/dragonnet/dat/ihdp/csv/ihdp_npci_34.csv
+Is targeted regularization: True
+I am here making dragonnet
+WARNING:tensorflow:AutoGraph could not transform <function make_tarreg_loss.<locals>.tarreg_ATE_unbounded_domain_loss at 0x7f32e81e1dc0> and will run it as-is.
+Please report this to the TensorFlow team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output.
+Cause: module 'gast' has no attribute 'Index'
+To silence this warning, decorate the function with @tf.autograph.experimental.do_not_convert
+***************************** elapsed_time is:  21.63407611846924
+TEST: average propensity for treated: 0.194022074341774 and untreated: 0.14912676811218262
+TRAIN: average propensity for treated: 0.25556081533432007 and untreated: 0.15083734691143036
+Is targeted regularization: False
+I am here making dragonnet
+***************************** elapsed_time is:  22.417255401611328
+TEST: average propensity for treated: 0.1947328746318817 and untreated: 0.15249115228652954
+TRAIN: average propensity for treated: 0.24381159245967865 and untreated: 0.15249571204185486
+++++ 28 / 63 ---> /local_home/ag62216/var/dragonnet/dat/ihdp/csv/ihdp_npci_35.csv
+Is targeted regularization: True
+I am here making dragonnet
+WARNING:tensorflow:AutoGraph could not transform <function make_tarreg_loss.<locals>.tarreg_ATE_unbounded_domain_loss at 0x7f32a06ab550> and will run it as-is.
+Please report this to the TensorFlow team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output.
+Cause: module 'gast' has no attribute 'Index'
+To silence this warning, decorate the function with @tf.autograph.experimental.do_not_convert
+***************************** elapsed_time is:  24.828107357025146
+TEST: average propensity for treated: 0.18446379899978638 and untreated: 0.14990518987178802
+TRAIN: average propensity for treated: 0.23929625749588013 and untreated: 0.15391412377357483
+Is targeted regularization: False
+I am here making dragonnet
+***************************** elapsed_time is:  19.78152632713318
+TEST: average propensity for treated: 0.1893020123243332 and untreated: 0.14747653901576996
+TRAIN: average propensity for treated: 0.24759133160114288 and untreated: 0.15191613137722015
+++++ 29 / 63 ---> /local_home/ag62216/var/dragonnet/dat/ihdp/csv/ihdp_npci_36.csv
+Is targeted regularization: True
+I am here making dragonnet
+WARNING:tensorflow:AutoGraph could not transform <function make_tarreg_loss.<locals>.tarreg_ATE_unbounded_domain_loss at 0x7f32a0259ee0> and will run it as-is.
+Please report this to the TensorFlow team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output.
+Cause: module 'gast' has no attribute 'Index'
+To silence this warning, decorate the function with @tf.autograph.experimental.do_not_convert
+***************************** elapsed_time is:  20.968735218048096
+TEST: average propensity for treated: 0.20058168470859528 and untreated: 0.14823018014431
+TRAIN: average propensity for treated: 0.2612276077270508 and untreated: 0.14994221925735474
+Is targeted regularization: False
+I am here making dragonnet
+***************************** elapsed_time is:  19.571982383728027
+TEST: average propensity for treated: 0.2091662436723709 and untreated: 0.14830368757247925
+TRAIN: average propensity for treated: 0.27269625663757324 and untreated: 0.1472337394952774
+++++ 30 / 63 ---> /local_home/ag62216/var/dragonnet/dat/ihdp/csv/ihdp_npci_37.csv
+Is targeted regularization: True
+I am here making dragonnet
+WARNING:tensorflow:AutoGraph could not transform <function make_tarreg_loss.<locals>.tarreg_ATE_unbounded_domain_loss at 0x7f32e805f5e0> and will run it as-is.
+Please report this to the TensorFlow team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output.
+Cause: module 'gast' has no attribute 'Index'
+To silence this warning, decorate the function with @tf.autograph.experimental.do_not_convert
+***************************** elapsed_time is:  18.02700185775757
+TEST: average propensity for treated: 0.1946353316307068 and untreated: 0.15556876361370087
+TRAIN: average propensity for treated: 0.23607757687568665 and untreated: 0.15592974424362183
+Is targeted regularization: False
+I am here making dragonnet
+***************************** elapsed_time is:  8.824310779571533
+TEST: average propensity for treated: 0.19724558293819427 and untreated: 0.15434731543064117
+TRAIN: average propensity for treated: 0.2441522479057312 and untreated: 0.15469099581241608
+++++ 31 / 63 ---> /local_home/ag62216/var/dragonnet/dat/ihdp/csv/ihdp_npci_38.csv
+Is targeted regularization: True
+I am here making dragonnet
+WARNING:tensorflow:AutoGraph could not transform <function make_tarreg_loss.<locals>.tarreg_ATE_unbounded_domain_loss at 0x7f32c876f1f0> and will run it as-is.
+Please report this to the TensorFlow team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output.
+Cause: module 'gast' has no attribute 'Index'
+To silence this warning, decorate the function with @tf.autograph.experimental.do_not_convert
+***************************** elapsed_time is:  16.56583023071289
+TEST: average propensity for treated: 0.1960238665342331 and untreated: 0.1481107771396637
+TRAIN: average propensity for treated: 0.2523801624774933 and untreated: 0.1523413509130478
+Is targeted regularization: False
+I am here making dragonnet
+***************************** elapsed_time is:  16.39298152923584
+TEST: average propensity for treated: 0.19866681098937988 and untreated: 0.1503601223230362
+TRAIN: average propensity for treated: 0.24766048789024353 and untreated: 0.15238602459430695
+++++ 32 / 63 ---> /local_home/ag62216/var/dragonnet/dat/ihdp/csv/ihdp_npci_39.csv
+Is targeted regularization: True
+I am here making dragonnet
+WARNING:tensorflow:AutoGraph could not transform <function make_tarreg_loss.<locals>.tarreg_ATE_unbounded_domain_loss at 0x7f33400a5b80> and will run it as-is.
+Please report this to the TensorFlow team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output.
+Cause: module 'gast' has no attribute 'Index'
+To silence this warning, decorate the function with @tf.autograph.experimental.do_not_convert
+***************************** elapsed_time is:  25.375200510025024
+TEST: average propensity for treated: 0.19484339654445648 and untreated: 0.14969350397586823
+TRAIN: average propensity for treated: 0.25266364216804504 and untreated: 0.15141713619232178
+Is targeted regularization: False
+I am here making dragonnet
+***************************** elapsed_time is:  22.502588033676147
+TEST: average propensity for treated: 0.19827023148536682 and untreated: 0.1543085277080536
+TRAIN: average propensity for treated: 0.24469879269599915 and untreated: 0.15408188104629517
+++++ 33 / 62 ---> /local_home/ag62216/var/dragonnet/dat/ihdp/csv/ihdp_npci_4.csv
+Is targeted regularization: True
+I am here making dragonnet
+WARNING:tensorflow:AutoGraph could not transform <function make_tarreg_loss.<locals>.tarreg_ATE_unbounded_domain_loss at 0x7f334004f700> and will run it as-is.
+Please report this to the TensorFlow team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output.
+Cause: module 'gast' has no attribute 'Index'
+To silence this warning, decorate the function with @tf.autograph.experimental.do_not_convert
+***************************** elapsed_time is:  13.134490966796875
+TEST: average propensity for treated: 0.19396503269672394 and untreated: 0.15530137717723846
+TRAIN: average propensity for treated: 0.2334650307893753 and untreated: 0.15829358994960785
+Is targeted regularization: False
+I am here making dragonnet
+***************************** elapsed_time is:  12.182207107543945
+TEST: average propensity for treated: 0.19969746470451355 and untreated: 0.1518905609846115
+TRAIN: average propensity for treated: 0.25207263231277466 and untreated: 0.1533052623271942
+++++ 34 / 63 ---> /local_home/ag62216/var/dragonnet/dat/ihdp/csv/ihdp_npci_40.csv
+Is targeted regularization: True
+I am here making dragonnet
+WARNING:tensorflow:AutoGraph could not transform <function make_tarreg_loss.<locals>.tarreg_ATE_unbounded_domain_loss at 0x7f32c859bc10> and will run it as-is.
+Please report this to the TensorFlow team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output.
+Cause: module 'gast' has no attribute 'Index'
+To silence this warning, decorate the function with @tf.autograph.experimental.do_not_convert
+***************************** elapsed_time is:  14.292872190475464
+TEST: average propensity for treated: 0.19310739636421204 and untreated: 0.15491119027137756
+TRAIN: average propensity for treated: 0.22152875363826752 and untreated: 0.15660826861858368
+Is targeted regularization: False
+I am here making dragonnet
+***************************** elapsed_time is:  16.387405157089233
+TEST: average propensity for treated: 0.199777290225029 and untreated: 0.15131504833698273
+TRAIN: average propensity for treated: 0.24476447701454163 and untreated: 0.15220029652118683
+++++ 35 / 63 ---> /local_home/ag62216/var/dragonnet/dat/ihdp/csv/ihdp_npci_41.csv
+Is targeted regularization: True
+I am here making dragonnet
+WARNING:tensorflow:AutoGraph could not transform <function make_tarreg_loss.<locals>.tarreg_ATE_unbounded_domain_loss at 0x7f32e81c88b0> and will run it as-is.
+Please report this to the TensorFlow team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output.
+Cause: module 'gast' has no attribute 'Index'
+To silence this warning, decorate the function with @tf.autograph.experimental.do_not_convert
+***************************** elapsed_time is:  10.706976890563965
+TEST: average propensity for treated: 0.18473409116268158 and untreated: 0.15568865835666656
+TRAIN: average propensity for treated: 0.22306808829307556 and untreated: 0.1570235788822174
+Is targeted regularization: False
+I am here making dragonnet
+***************************** elapsed_time is:  10.748366355895996
+TEST: average propensity for treated: 0.19554047286510468 and untreated: 0.15292896330356598
+TRAIN: average propensity for treated: 0.2435448318719864 and untreated: 0.15356922149658203
+++++ 36 / 63 ---> /local_home/ag62216/var/dragonnet/dat/ihdp/csv/ihdp_npci_42.csv
+Is targeted regularization: True
+I am here making dragonnet
+WARNING:tensorflow:AutoGraph could not transform <function make_tarreg_loss.<locals>.tarreg_ATE_unbounded_domain_loss at 0x7f3352d77dc0> and will run it as-is.
+Please report this to the TensorFlow team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output.
+Cause: module 'gast' has no attribute 'Index'
+To silence this warning, decorate the function with @tf.autograph.experimental.do_not_convert
+***************************** elapsed_time is:  11.314819097518921
+TEST: average propensity for treated: 0.1946333348751068 and untreated: 0.15137454867362976
+TRAIN: average propensity for treated: 0.2494124323129654 and untreated: 0.1548331379890442
+Is targeted regularization: False
+I am here making dragonnet
+***************************** elapsed_time is:  8.740991592407227
+TEST: average propensity for treated: 0.20192387700080872 and untreated: 0.14834091067314148
+TRAIN: average propensity for treated: 0.26471900939941406 and untreated: 0.15041713416576385
+++++ 37 / 63 ---> /local_home/ag62216/var/dragonnet/dat/ihdp/csv/ihdp_npci_43.csv
+Is targeted regularization: True
+I am here making dragonnet
+WARNING:tensorflow:AutoGraph could not transform <function make_tarreg_loss.<locals>.tarreg_ATE_unbounded_domain_loss at 0x7f32a05283a0> and will run it as-is.
+Please report this to the TensorFlow team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output.
+Cause: module 'gast' has no attribute 'Index'
+To silence this warning, decorate the function with @tf.autograph.experimental.do_not_convert
+***************************** elapsed_time is:  17.645941972732544
+TEST: average propensity for treated: 0.2002682387828827 and untreated: 0.15230928361415863
+TRAIN: average propensity for treated: 0.2522202134132385 and untreated: 0.15340176224708557
+Is targeted regularization: False
+I am here making dragonnet
+***************************** elapsed_time is:  9.313702583312988
+TEST: average propensity for treated: 0.20584718883037567 and untreated: 0.15016841888427734
+TRAIN: average propensity for treated: 0.26147395372390747 and untreated: 0.15067678689956665
+++++ 38 / 63 ---> /local_home/ag62216/var/dragonnet/dat/ihdp/csv/ihdp_npci_44.csv
+Is targeted regularization: True
+I am here making dragonnet
+WARNING:tensorflow:AutoGraph could not transform <function make_tarreg_loss.<locals>.tarreg_ATE_unbounded_domain_loss at 0x7f32c876f820> and will run it as-is.
+Please report this to the TensorFlow team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output.
+Cause: module 'gast' has no attribute 'Index'
+To silence this warning, decorate the function with @tf.autograph.experimental.do_not_convert
+***************************** elapsed_time is:  19.067370176315308
+TEST: average propensity for treated: 0.1940772533416748 and untreated: 0.1546395868062973
+TRAIN: average propensity for treated: 0.23962225019931793 and untreated: 0.1565616875886917
+Is targeted regularization: False
+I am here making dragonnet
+***************************** elapsed_time is:  13.120471954345703
+TEST: average propensity for treated: 0.19875580072402954 and untreated: 0.15189723670482635
+TRAIN: average propensity for treated: 0.2519162595272064 and untreated: 0.1533333957195282
+++++ 39 / 63 ---> /local_home/ag62216/var/dragonnet/dat/ihdp/csv/ihdp_npci_45.csv
+Is targeted regularization: True
+I am here making dragonnet
+WARNING:tensorflow:AutoGraph could not transform <function make_tarreg_loss.<locals>.tarreg_ATE_unbounded_domain_loss at 0x7f32a05f7310> and will run it as-is.
+Please report this to the TensorFlow team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output.
+Cause: module 'gast' has no attribute 'Index'
+To silence this warning, decorate the function with @tf.autograph.experimental.do_not_convert
+***************************** elapsed_time is:  23.016470909118652
+TEST: average propensity for treated: 0.20287905633449554 and untreated: 0.1496395617723465
+TRAIN: average propensity for treated: 0.2619311213493347 and untreated: 0.14986227452754974
+Is targeted regularization: False
+I am here making dragonnet
+***************************** elapsed_time is:  23.984257459640503
+TEST: average propensity for treated: 0.20773769915103912 and untreated: 0.14831045269966125
+TRAIN: average propensity for treated: 0.27215927839279175 and untreated: 0.14803002774715424
+++++ 40 / 63 ---> /local_home/ag62216/var/dragonnet/dat/ihdp/csv/ihdp_npci_46.csv
+Is targeted regularization: True
+I am here making dragonnet
+WARNING:tensorflow:AutoGraph could not transform <function make_tarreg_loss.<locals>.tarreg_ATE_unbounded_domain_loss at 0x7f32c859b280> and will run it as-is.
+Please report this to the TensorFlow team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output.
+Cause: module 'gast' has no attribute 'Index'
+To silence this warning, decorate the function with @tf.autograph.experimental.do_not_convert
+***************************** elapsed_time is:  15.78200912475586
+TEST: average propensity for treated: 0.18773797154426575 and untreated: 0.15234333276748657
+TRAIN: average propensity for treated: 0.2404390275478363 and untreated: 0.1533571183681488
+Is targeted regularization: False
+I am here making dragonnet
+***************************** elapsed_time is:  12.979632377624512
+TEST: average propensity for treated: 0.19710038602352142 and untreated: 0.14842627942562103
+TRAIN: average propensity for treated: 0.2614591419696808 and untreated: 0.14879126846790314
+++++ 41 / 63 ---> /local_home/ag62216/var/dragonnet/dat/ihdp/csv/ihdp_npci_47.csv
+Is targeted regularization: True
+I am here making dragonnet
+WARNING:tensorflow:AutoGraph could not transform <function make_tarreg_loss.<locals>.tarreg_ATE_unbounded_domain_loss at 0x7f33530b8a60> and will run it as-is.
+Please report this to the TensorFlow team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output.
+Cause: module 'gast' has no attribute 'Index'
+To silence this warning, decorate the function with @tf.autograph.experimental.do_not_convert
+***************************** elapsed_time is:  15.72785210609436
+TEST: average propensity for treated: 0.19354231655597687 and untreated: 0.15128062665462494
+TRAIN: average propensity for treated: 0.24135081470012665 and untreated: 0.15419873595237732
+Is targeted regularization: False
+I am here making dragonnet
+***************************** elapsed_time is:  11.706463098526001
+TEST: average propensity for treated: 0.2053256332874298 and untreated: 0.14693109691143036
+TRAIN: average propensity for treated: 0.2676601707935333 and untreated: 0.1481030136346817
+++++ 42 / 63 ---> /local_home/ag62216/var/dragonnet/dat/ihdp/csv/ihdp_npci_48.csv
+Is targeted regularization: True
+I am here making dragonnet
+WARNING:tensorflow:AutoGraph could not transform <function make_tarreg_loss.<locals>.tarreg_ATE_unbounded_domain_loss at 0x7f33400a5f70> and will run it as-is.
+Please report this to the TensorFlow team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output.
+Cause: module 'gast' has no attribute 'Index'
+To silence this warning, decorate the function with @tf.autograph.experimental.do_not_convert
+***************************** elapsed_time is:  19.41856598854065
+TEST: average propensity for treated: 0.193307027220726 and untreated: 0.15535615384578705
+TRAIN: average propensity for treated: 0.23743148148059845 and untreated: 0.15647628903388977
+Is targeted regularization: False
+I am here making dragonnet
+***************************** elapsed_time is:  8.992337226867676
+TEST: average propensity for treated: 0.19625452160835266 and untreated: 0.1543044149875641
+TRAIN: average propensity for treated: 0.24236424267292023 and untreated: 0.15587519109249115
+++++ 43 / 63 ---> /local_home/ag62216/var/dragonnet/dat/ihdp/csv/ihdp_npci_49.csv
+Is targeted regularization: True
+I am here making dragonnet
+WARNING:tensorflow:AutoGraph could not transform <function make_tarreg_loss.<locals>.tarreg_ATE_unbounded_domain_loss at 0x7f33400cd4c0> and will run it as-is.
+Please report this to the TensorFlow team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output.
+Cause: module 'gast' has no attribute 'Index'
+To silence this warning, decorate the function with @tf.autograph.experimental.do_not_convert
+***************************** elapsed_time is:  16.388344764709473
+TEST: average propensity for treated: 0.18636231124401093 and untreated: 0.15716001391410828
+TRAIN: average propensity for treated: 0.23170433938503265 and untreated: 0.15754279494285583
+Is targeted regularization: False
+I am here making dragonnet
+***************************** elapsed_time is:  20.345940589904785
+TEST: average propensity for treated: 0.19416195154190063 and untreated: 0.15080679953098297
+TRAIN: average propensity for treated: 0.2569692134857178 and untreated: 0.15110532939434052
+++++ 44 / 62 ---> /local_home/ag62216/var/dragonnet/dat/ihdp/csv/ihdp_npci_5.csv
+Is targeted regularization: True
+I am here making dragonnet
+WARNING:tensorflow:AutoGraph could not transform <function make_tarreg_loss.<locals>.tarreg_ATE_unbounded_domain_loss at 0x7f32a049eca0> and will run it as-is.
+Please report this to the TensorFlow team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output.
+Cause: module 'gast' has no attribute 'Index'
+To silence this warning, decorate the function with @tf.autograph.experimental.do_not_convert
+***************************** elapsed_time is:  18.889559745788574
+TEST: average propensity for treated: 0.19323305785655975 and untreated: 0.15181636810302734
+TRAIN: average propensity for treated: 0.24989287555217743 and untreated: 0.1533888727426529
+Is targeted regularization: False
+I am here making dragonnet
+***************************** elapsed_time is:  14.680195093154907
+TEST: average propensity for treated: 0.2014201283454895 and untreated: 0.14714103937149048
+TRAIN: average propensity for treated: 0.2672489881515503 and untreated: 0.14905494451522827
+++++ 45 / 63 ---> /local_home/ag62216/var/dragonnet/dat/ihdp/csv/ihdp_npci_50.csv
+Is targeted regularization: True
+I am here making dragonnet
+WARNING:tensorflow:AutoGraph could not transform <function make_tarreg_loss.<locals>.tarreg_ATE_unbounded_domain_loss at 0x7f32c81fb700> and will run it as-is.
+Please report this to the TensorFlow team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output.
+Cause: module 'gast' has no attribute 'Index'
+To silence this warning, decorate the function with @tf.autograph.experimental.do_not_convert
+***************************** elapsed_time is:  11.060454845428467
+TEST: average propensity for treated: 0.1959896832704544 and untreated: 0.14833536744117737
+TRAIN: average propensity for treated: 0.24207812547683716 and untreated: 0.1535009741783142
+Is targeted regularization: False
+I am here making dragonnet
+***************************** elapsed_time is:  8.360405683517456
+TEST: average propensity for treated: 0.2063722461462021 and untreated: 0.14507228136062622
+TRAIN: average propensity for treated: 0.2672252953052521 and untreated: 0.14810782670974731
+++++ 46 / 62 ---> /local_home/ag62216/var/dragonnet/dat/ihdp/csv/ihdp_npci_6.csv
+Is targeted regularization: True
+I am here making dragonnet
+WARNING:tensorflow:AutoGraph could not transform <function make_tarreg_loss.<locals>.tarreg_ATE_unbounded_domain_loss at 0x7f332c05ce50> and will run it as-is.
+Please report this to the TensorFlow team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output.
+Cause: module 'gast' has no attribute 'Index'
+To silence this warning, decorate the function with @tf.autograph.experimental.do_not_convert
+***************************** elapsed_time is:  13.770033359527588
+TEST: average propensity for treated: 0.1963386833667755 and untreated: 0.15639549493789673
+TRAIN: average propensity for treated: 0.23389150202274323 and untreated: 0.15856988728046417
+Is targeted regularization: False
+I am here making dragonnet
+***************************** elapsed_time is:  8.402501821517944
+TEST: average propensity for treated: 0.20244243741035461 and untreated: 0.15241457521915436
+TRAIN: average propensity for treated: 0.25035104155540466 and untreated: 0.15395240485668182
+++++ 47 / 62 ---> /local_home/ag62216/var/dragonnet/dat/ihdp/csv/ihdp_npci_7.csv
+Is targeted regularization: True
+I am here making dragonnet
+WARNING:tensorflow:AutoGraph could not transform <function make_tarreg_loss.<locals>.tarreg_ATE_unbounded_domain_loss at 0x7f32a06b3d30> and will run it as-is.
+Please report this to the TensorFlow team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output.
+Cause: module 'gast' has no attribute 'Index'
+To silence this warning, decorate the function with @tf.autograph.experimental.do_not_convert
+***************************** elapsed_time is:  9.855498313903809
+TEST: average propensity for treated: 0.19669435918331146 and untreated: 0.15806342661380768
+TRAIN: average propensity for treated: 0.2361242026090622 and untreated: 0.1605735868215561
+Is targeted regularization: False
+I am here making dragonnet
+***************************** elapsed_time is:  8.808002233505249
+TEST: average propensity for treated: 0.20176376402378082 and untreated: 0.15095582604408264
+TRAIN: average propensity for treated: 0.2545709013938904 and untreated: 0.1534927785396576
+++++ 48 / 62 ---> /local_home/ag62216/var/dragonnet/dat/ihdp/csv/ihdp_npci_8.csv
+Is targeted regularization: True
+I am here making dragonnet
+WARNING:tensorflow:AutoGraph could not transform <function make_tarreg_loss.<locals>.tarreg_ATE_unbounded_domain_loss at 0x7f32a05f7790> and will run it as-is.
+Please report this to the TensorFlow team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output.
+Cause: module 'gast' has no attribute 'Index'
+To silence this warning, decorate the function with @tf.autograph.experimental.do_not_convert
+***************************** elapsed_time is:  16.30966806411743
+TEST: average propensity for treated: 0.19601845741271973 and untreated: 0.1490638256072998
+TRAIN: average propensity for treated: 0.26325610280036926 and untreated: 0.15069526433944702
+Is targeted regularization: False
+I am here making dragonnet
+***************************** elapsed_time is:  11.911532163619995
+TEST: average propensity for treated: 0.19728145003318787 and untreated: 0.15339605510234833
+TRAIN: average propensity for treated: 0.24843314290046692 and untreated: 0.15407827496528625
+++++ 49 / 62 ---> /local_home/ag62216/var/dragonnet/dat/ihdp/csv/ihdp_npci_9.csv
+Is targeted regularization: True
+I am here making dragonnet
+***************************** elapsed_time is:  13.157150506973267
+TEST: average propensity for treated: 0.18105177581310272 and untreated: 0.15168552100658417
+TRAIN: average propensity for treated: 0.2309737503528595 and untreated: 0.1522366851568222
+Is targeted regularization: False
+I am here making dragonnet
+***************************** elapsed_time is:  11.27927017211914
+TEST: average propensity for treated: 0.19080901145935059 and untreated: 0.14934715628623962
+TRAIN: average propensity for treated: 0.2511911988258362 and untreated: 0.14949485659599304
+tarnet
+2021-07-21 20:30:10.697960: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudart.so.10.1
+2021-07-21 20:30:12.631549: I tensorflow/compiler/jit/xla_cpu_device.cc:41] Not creating XLA devices, tf_xla_enable_xla_devices not set
+2021-07-21 20:30:12.633155: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcuda.so.1
+2021-07-21 20:30:12.773712: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1720] Found device 0 with properties: 
+pciBusID: 0000:3d:00.0 name: TITAN RTX computeCapability: 7.5
+coreClock: 1.77GHz coreCount: 72 deviceMemorySize: 23.65GiB deviceMemoryBandwidth: 625.94GiB/s
+2021-07-21 20:30:12.775702: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1720] Found device 1 with properties: 
+pciBusID: 0000:3e:00.0 name: TITAN RTX computeCapability: 7.5
+coreClock: 1.77GHz coreCount: 72 deviceMemorySize: 23.65GiB deviceMemoryBandwidth: 625.94GiB/s
+2021-07-21 20:30:12.777210: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1720] Found device 2 with properties: 
+pciBusID: 0000:3f:00.0 name: TITAN RTX computeCapability: 7.5
+coreClock: 1.77GHz coreCount: 72 deviceMemorySize: 23.65GiB deviceMemoryBandwidth: 625.94GiB/s
+2021-07-21 20:30:12.779038: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1720] Found device 3 with properties: 
+pciBusID: 0000:40:00.0 name: TITAN RTX computeCapability: 7.5
+coreClock: 1.77GHz coreCount: 72 deviceMemorySize: 23.65GiB deviceMemoryBandwidth: 625.94GiB/s
+2021-07-21 20:30:12.781109: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1720] Found device 4 with properties: 
+pciBusID: 0000:60:00.0 name: TITAN RTX computeCapability: 7.5
+coreClock: 1.77GHz coreCount: 72 deviceMemorySize: 23.65GiB deviceMemoryBandwidth: 625.94GiB/s
+2021-07-21 20:30:12.782710: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1720] Found device 5 with properties: 
+pciBusID: 0000:61:00.0 name: TITAN RTX computeCapability: 7.5
+coreClock: 1.77GHz coreCount: 72 deviceMemorySize: 23.65GiB deviceMemoryBandwidth: 625.94GiB/s
+2021-07-21 20:30:12.784243: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1720] Found device 6 with properties: 
+pciBusID: 0000:62:00.0 name: TITAN RTX computeCapability: 7.5
+coreClock: 1.77GHz coreCount: 72 deviceMemorySize: 23.65GiB deviceMemoryBandwidth: 625.94GiB/s
+2021-07-21 20:30:12.785743: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1720] Found device 7 with properties: 
+pciBusID: 0000:63:00.0 name: TITAN RTX computeCapability: 7.5
+coreClock: 1.77GHz coreCount: 72 deviceMemorySize: 23.65GiB deviceMemoryBandwidth: 625.94GiB/s
+2021-07-21 20:30:12.785775: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudart.so.10.1
+2021-07-21 20:30:12.788354: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcublas.so.10
+2021-07-21 20:30:12.788445: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcublasLt.so.10
+2021-07-21 20:30:12.790207: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcufft.so.10
+2021-07-21 20:30:12.790570: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcurand.so.10
+2021-07-21 20:30:12.792517: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcusolver.so.10
+2021-07-21 20:30:12.793676: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcusparse.so.10
+2021-07-21 20:30:12.798247: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudnn.so.7
+2021-07-21 20:30:12.830058: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1862] Adding visible gpu devices: 0, 1, 2, 3, 4, 5, 6, 7
+2021-07-21 20:30:12.830579: I tensorflow/core/platform/cpu_feature_guard.cc:142] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  SSE4.1 SSE4.2 AVX AVX2 AVX512F FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2021-07-21 20:30:14.227833: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1720] Found device 0 with properties: 
+pciBusID: 0000:3d:00.0 name: TITAN RTX computeCapability: 7.5
+coreClock: 1.77GHz coreCount: 72 deviceMemorySize: 23.65GiB deviceMemoryBandwidth: 625.94GiB/s
+2021-07-21 20:30:14.229594: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1720] Found device 1 with properties: 
+pciBusID: 0000:3e:00.0 name: TITAN RTX computeCapability: 7.5
+coreClock: 1.77GHz coreCount: 72 deviceMemorySize: 23.65GiB deviceMemoryBandwidth: 625.94GiB/s
+2021-07-21 20:30:14.231506: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1720] Found device 2 with properties: 
+pciBusID: 0000:3f:00.0 name: TITAN RTX computeCapability: 7.5
+coreClock: 1.77GHz coreCount: 72 deviceMemorySize: 23.65GiB deviceMemoryBandwidth: 625.94GiB/s
+2021-07-21 20:30:14.233073: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1720] Found device 3 with properties: 
+pciBusID: 0000:40:00.0 name: TITAN RTX computeCapability: 7.5
+coreClock: 1.77GHz coreCount: 72 deviceMemorySize: 23.65GiB deviceMemoryBandwidth: 625.94GiB/s
+2021-07-21 20:30:14.234615: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1720] Found device 4 with properties: 
+pciBusID: 0000:60:00.0 name: TITAN RTX computeCapability: 7.5
+coreClock: 1.77GHz coreCount: 72 deviceMemorySize: 23.65GiB deviceMemoryBandwidth: 625.94GiB/s
+2021-07-21 20:30:14.236156: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1720] Found device 5 with properties: 
+pciBusID: 0000:61:00.0 name: TITAN RTX computeCapability: 7.5
+coreClock: 1.77GHz coreCount: 72 deviceMemorySize: 23.65GiB deviceMemoryBandwidth: 625.94GiB/s
+2021-07-21 20:30:14.237985: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1720] Found device 6 with properties: 
+pciBusID: 0000:62:00.0 name: TITAN RTX computeCapability: 7.5
+coreClock: 1.77GHz coreCount: 72 deviceMemorySize: 23.65GiB deviceMemoryBandwidth: 625.94GiB/s
+2021-07-21 20:30:14.239509: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1720] Found device 7 with properties: 
+pciBusID: 0000:63:00.0 name: TITAN RTX computeCapability: 7.5
+coreClock: 1.77GHz coreCount: 72 deviceMemorySize: 23.65GiB deviceMemoryBandwidth: 625.94GiB/s
+2021-07-21 20:30:14.239557: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudart.so.10.1
+2021-07-21 20:30:14.239622: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcublas.so.10
+2021-07-21 20:30:14.239636: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcublasLt.so.10
+2021-07-21 20:30:14.239649: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcufft.so.10
+2021-07-21 20:30:14.239662: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcurand.so.10
+2021-07-21 20:30:14.239673: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcusolver.so.10
+2021-07-21 20:30:14.239683: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcusparse.so.10
+2021-07-21 20:30:14.239695: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudnn.so.7
+2021-07-21 20:30:14.266886: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1862] Adding visible gpu devices: 0, 1, 2, 3, 4, 5, 6, 7
+2021-07-21 20:30:14.266974: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudart.so.10.1
+2021-07-21 20:30:19.836550: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1261] Device interconnect StreamExecutor with strength 1 edge matrix:
+2021-07-21 20:30:19.836614: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1267]      0 1 2 3 4 5 6 7 
+2021-07-21 20:30:19.836624: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1280] 0:   N N Y N N N N N 
+2021-07-21 20:30:19.836630: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1280] 1:   N N N N N N N N 
+2021-07-21 20:30:19.836636: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1280] 2:   Y N N N N N N N 
+2021-07-21 20:30:19.836641: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1280] 3:   N N N N N N N N 
+2021-07-21 20:30:19.836647: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1280] 4:   N N N N N N N N 
+2021-07-21 20:30:19.836653: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1280] 5:   N N N N N N N Y 
+2021-07-21 20:30:19.836658: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1280] 6:   N N N N N N N N 
+2021-07-21 20:30:19.836664: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1280] 7:   N N N N N Y N N 
+2021-07-21 20:30:19.853192: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1406] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 20584 MB memory) -> physical GPU (device: 0, name: TITAN RTX, pci bus id: 0000:3d:00.0, compute capability: 7.5)
+2021-07-21 20:30:19.857216: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1406] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:1 with 21464 MB memory) -> physical GPU (device: 1, name: TITAN RTX, pci bus id: 0000:3e:00.0, compute capability: 7.5)
+2021-07-21 20:30:19.860909: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1406] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:2 with 20482 MB memory) -> physical GPU (device: 2, name: TITAN RTX, pci bus id: 0000:3f:00.0, compute capability: 7.5)
+2021-07-21 20:30:19.865010: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1406] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:3 with 21481 MB memory) -> physical GPU (device: 3, name: TITAN RTX, pci bus id: 0000:40:00.0, compute capability: 7.5)
+2021-07-21 20:30:19.868912: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1406] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:4 with 21464 MB memory) -> physical GPU (device: 4, name: TITAN RTX, pci bus id: 0000:60:00.0, compute capability: 7.5)
+2021-07-21 20:30:19.872553: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1406] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:5 with 19504 MB memory) -> physical GPU (device: 5, name: TITAN RTX, pci bus id: 0000:61:00.0, compute capability: 7.5)
+2021-07-21 20:30:19.876491: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1406] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:6 with 19509 MB memory) -> physical GPU (device: 6, name: TITAN RTX, pci bus id: 0000:62:00.0, compute capability: 7.5)
+2021-07-21 20:30:19.880570: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1406] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:7 with 19487 MB memory) -> physical GPU (device: 7, name: TITAN RTX, pci bus id: 0000:63:00.0, compute capability: 7.5)
+2021-07-21 20:30:19.881351: I tensorflow/compiler/jit/xla_gpu_device.cc:99] Not creating XLA devices, tf_xla_enable_xla_devices not set
+WARNING:tensorflow:AutoGraph could not transform <bound method EpsilonLayer.call of <experiment.models.EpsilonLayer object at 0x7fcd8e4af8e0>> and will run it as-is.
+Please report this to the TensorFlow team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output.
+Cause: module 'gast' has no attribute 'Index'
+To silence this warning, decorate the function with @tf.autograph.experimental.do_not_convert
+the dragon is tarnet
+++++ 0 / 62 ---> /local_home/ag62216/var/dragonnet/dat/ihdp/csv/ihdp_npci_1.csv
+Is targeted regularization: True
+2021-07-21 20:30:20.557705: I tensorflow/compiler/mlir/mlir_graph_optimization_pass.cc:116] None of the MLIR optimization passes are enabled (registered 2)
+2021-07-21 20:30:20.559316: I tensorflow/core/platform/profile_utils/cpu_utils.cc:112] CPU Frequency: 2400000000 Hz
+WARNING:tensorflow:AutoGraph could not transform <function make_tarreg_loss.<locals>.tarreg_ATE_unbounded_domain_loss at 0x7fcd8e49fd30> and will run it as-is.
+Please report this to the TensorFlow team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output.
+Cause: module 'gast' has no attribute 'Index'
+To silence this warning, decorate the function with @tf.autograph.experimental.do_not_convert
+WARNING:tensorflow:AutoGraph could not transform <function regression_loss at 0x7fcd91cc89d0> and will run it as-is.
+Please report this to the TensorFlow team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output.
+Cause: module 'gast' has no attribute 'Index'
+To silence this warning, decorate the function with @tf.autograph.experimental.do_not_convert
+WARNING:tensorflow:AutoGraph could not transform <function binary_classification_loss at 0x7fcde24d9c10> and will run it as-is.
+Please report this to the TensorFlow team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output.
+Cause: module 'gast' has no attribute 'Index'
+To silence this warning, decorate the function with @tf.autograph.experimental.do_not_convert
+WARNING:tensorflow:AutoGraph could not transform <function treatment_accuracy at 0x7fcd91cf55e0> and will run it as-is.
+Please report this to the TensorFlow team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output.
+Cause: module 'gast' has no attribute 'Index'
+To silence this warning, decorate the function with @tf.autograph.experimental.do_not_convert
+WARNING:tensorflow:AutoGraph could not transform <function track_epsilon at 0x7fcd91cf5670> and will run it as-is.
+Please report this to the TensorFlow team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output.
+Cause: module 'gast' has no attribute 'Index'
+To silence this warning, decorate the function with @tf.autograph.experimental.do_not_convert
+2021-07-21 20:30:21.907353: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcublas.so.10
+WARNING:tensorflow:AutoGraph could not transform <function make_tarreg_loss.<locals>.tarreg_ATE_unbounded_domain_loss at 0x7fccc04188b0> and will run it as-is.
+Please report this to the TensorFlow team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output.
+Cause: module 'gast' has no attribute 'Index'
+To silence this warning, decorate the function with @tf.autograph.experimental.do_not_convert
+***************************** elapsed_time is:  16.642381191253662
+TEST: average propensity for treated: 0.21122439205646515 and untreated: 0.1895701289176941
+TRAIN: average propensity for treated: 0.2199113816022873 and untreated: 0.18406231701374054
+Is targeted regularization: False
+***************************** elapsed_time is:  15.596882581710815
+TEST: average propensity for treated: 0.20270520448684692 and untreated: 0.18943379819393158
+TRAIN: average propensity for treated: 0.19695132970809937 and untreated: 0.18367815017700195
+++++ 1 / 63 ---> /local_home/ag62216/var/dragonnet/dat/ihdp/csv/ihdp_npci_10.csv
+Is targeted regularization: True
+WARNING:tensorflow:AutoGraph could not transform <function make_tarreg_loss.<locals>.tarreg_ATE_unbounded_domain_loss at 0x7fcd2b1a01f0> and will run it as-is.
+Please report this to the TensorFlow team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output.
+Cause: module 'gast' has no attribute 'Index'
+To silence this warning, decorate the function with @tf.autograph.experimental.do_not_convert
+***************************** elapsed_time is:  31.457646369934082
+TEST: average propensity for treated: 0.2022503763437271 and untreated: 0.18916943669319153
+TRAIN: average propensity for treated: 0.19667762517929077 and untreated: 0.18325838446617126
+Is targeted regularization: False
+***************************** elapsed_time is:  24.67344856262207
+TEST: average propensity for treated: 0.20676758885383606 and untreated: 0.1958286315202713
+TRAIN: average propensity for treated: 0.19865846633911133 and untreated: 0.19040000438690186
+++++ 2 / 63 ---> /local_home/ag62216/var/dragonnet/dat/ihdp/csv/ihdp_npci_11.csv
+Is targeted regularization: True
+WARNING:tensorflow:AutoGraph could not transform <function make_tarreg_loss.<locals>.tarreg_ATE_unbounded_domain_loss at 0x7fccc02f4550> and will run it as-is.
+Please report this to the TensorFlow team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output.
+Cause: module 'gast' has no attribute 'Index'
+To silence this warning, decorate the function with @tf.autograph.experimental.do_not_convert
+***************************** elapsed_time is:  21.396138429641724
+TEST: average propensity for treated: 0.2035563439130783 and untreated: 0.1914016157388687
+TRAIN: average propensity for treated: 0.19697390496730804 and untreated: 0.18567432463169098
+Is targeted regularization: False
+***************************** elapsed_time is:  22.910820722579956
+TEST: average propensity for treated: 0.2078125923871994 and untreated: 0.19156475365161896
+TRAIN: average propensity for treated: 0.1999555379152298 and untreated: 0.18530094623565674
+++++ 3 / 63 ---> /local_home/ag62216/var/dragonnet/dat/ihdp/csv/ihdp_npci_12.csv
+Is targeted regularization: True
+WARNING:tensorflow:AutoGraph could not transform <function make_tarreg_loss.<locals>.tarreg_ATE_unbounded_domain_loss at 0x7fccc058b8b0> and will run it as-is.
+Please report this to the TensorFlow team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output.
+Cause: module 'gast' has no attribute 'Index'
+To silence this warning, decorate the function with @tf.autograph.experimental.do_not_convert
+***************************** elapsed_time is:  20.764396905899048
+TEST: average propensity for treated: 0.20402051508426666 and untreated: 0.18765480816364288
+TRAIN: average propensity for treated: 0.19877667725086212 and untreated: 0.18115517497062683
+Is targeted regularization: False
+***************************** elapsed_time is:  25.967648029327393
+TEST: average propensity for treated: 0.2054385095834732 and untreated: 0.1889939308166504
+TRAIN: average propensity for treated: 0.1989753544330597 and untreated: 0.18268632888793945
+++++ 4 / 63 ---> /local_home/ag62216/var/dragonnet/dat/ihdp/csv/ihdp_npci_13.csv
+Is targeted regularization: True
+WARNING:tensorflow:AutoGraph could not transform <function make_tarreg_loss.<locals>.tarreg_ATE_unbounded_domain_loss at 0x7fccdc2ee8b0> and will run it as-is.
+Please report this to the TensorFlow team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output.
+Cause: module 'gast' has no attribute 'Index'
+To silence this warning, decorate the function with @tf.autograph.experimental.do_not_convert
+***************************** elapsed_time is:  23.147359609603882
+TEST: average propensity for treated: 0.20258386433124542 and untreated: 0.18699392676353455
+TRAIN: average propensity for treated: 0.19795644283294678 and untreated: 0.18073628842830658
+Is targeted regularization: False
+***************************** elapsed_time is:  23.13067889213562
+TEST: average propensity for treated: 0.20733825862407684 and untreated: 0.19390769302845
+TRAIN: average propensity for treated: 0.19907677173614502 and untreated: 0.1880386620759964
+++++ 5 / 63 ---> /local_home/ag62216/var/dragonnet/dat/ihdp/csv/ihdp_npci_14.csv
+Is targeted regularization: True
+WARNING:tensorflow:AutoGraph could not transform <function make_tarreg_loss.<locals>.tarreg_ATE_unbounded_domain_loss at 0x7fcd2b23d9d0> and will run it as-is.
+Please report this to the TensorFlow team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output.
+Cause: module 'gast' has no attribute 'Index'
+To silence this warning, decorate the function with @tf.autograph.experimental.do_not_convert
+***************************** elapsed_time is:  14.117331504821777
+TEST: average propensity for treated: 0.2089688777923584 and untreated: 0.19970281422138214
+TRAIN: average propensity for treated: 0.20015889406204224 and untreated: 0.19450411200523376
+Is targeted regularization: False
+***************************** elapsed_time is:  25.868759870529175
+TEST: average propensity for treated: 0.2089175134897232 and untreated: 0.19877435266971588
+TRAIN: average propensity for treated: 0.20008793473243713 and untreated: 0.19343474507331848
+++++ 6 / 63 ---> /local_home/ag62216/var/dragonnet/dat/ihdp/csv/ihdp_npci_15.csv
+Is targeted regularization: True
+WARNING:tensorflow:AutoGraph could not transform <function make_tarreg_loss.<locals>.tarreg_ATE_unbounded_domain_loss at 0x7fccc0245280> and will run it as-is.
+Please report this to the TensorFlow team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output.
+Cause: module 'gast' has no attribute 'Index'
+To silence this warning, decorate the function with @tf.autograph.experimental.do_not_convert
+***************************** elapsed_time is:  20.415049076080322
+TEST: average propensity for treated: 0.21239130198955536 and untreated: 0.20136576890945435
+TRAIN: average propensity for treated: 0.20253421366214752 and untreated: 0.19572070240974426
+Is targeted regularization: False
+***************************** elapsed_time is:  18.486912727355957
+TEST: average propensity for treated: 0.2069627195596695 and untreated: 0.19535566866397858
+TRAIN: average propensity for treated: 0.1987636685371399 and untreated: 0.18980951607227325
+++++ 7 / 63 ---> /local_home/ag62216/var/dragonnet/dat/ihdp/csv/ihdp_npci_16.csv
+Is targeted regularization: True
+WARNING:tensorflow:AutoGraph could not transform <function make_tarreg_loss.<locals>.tarreg_ATE_unbounded_domain_loss at 0x7fccc04f80d0> and will run it as-is.
+Please report this to the TensorFlow team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output.
+Cause: module 'gast' has no attribute 'Index'
+To silence this warning, decorate the function with @tf.autograph.experimental.do_not_convert
+***************************** elapsed_time is:  18.37645387649536
+TEST: average propensity for treated: 0.20236508548259735 and untreated: 0.18703122437000275
+TRAIN: average propensity for treated: 0.197859987616539 and untreated: 0.18102189898490906
+Is targeted regularization: False
+***************************** elapsed_time is:  18.996501922607422
+TEST: average propensity for treated: 0.20314116775989532 and untreated: 0.1885191798210144
+TRAIN: average propensity for treated: 0.19752348959445953 and untreated: 0.1824987381696701
+++++ 8 / 63 ---> /local_home/ag62216/var/dragonnet/dat/ihdp/csv/ihdp_npci_17.csv
+Is targeted regularization: True
+WARNING:tensorflow:AutoGraph could not transform <function make_tarreg_loss.<locals>.tarreg_ATE_unbounded_domain_loss at 0x7fccdc42e940> and will run it as-is.
+Please report this to the TensorFlow team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output.
+Cause: module 'gast' has no attribute 'Index'
+To silence this warning, decorate the function with @tf.autograph.experimental.do_not_convert
+***************************** elapsed_time is:  20.827457666397095
+TEST: average propensity for treated: 0.20684775710105896 and untreated: 0.19276055693626404
+TRAIN: average propensity for treated: 0.19935208559036255 and untreated: 0.18633946776390076
+Is targeted regularization: False
+***************************** elapsed_time is:  27.33654284477234
+TEST: average propensity for treated: 0.208065465092659 and untreated: 0.18980492651462555
+TRAIN: average propensity for treated: 0.20087505877017975 and untreated: 0.1832817643880844
+++++ 9 / 63 ---> /local_home/ag62216/var/dragonnet/dat/ihdp/csv/ihdp_npci_18.csv
+Is targeted regularization: True
+WARNING:tensorflow:AutoGraph could not transform <function make_tarreg_loss.<locals>.tarreg_ATE_unbounded_domain_loss at 0x7fccdc2b5a60> and will run it as-is.
+Please report this to the TensorFlow team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output.
+Cause: module 'gast' has no attribute 'Index'
+To silence this warning, decorate the function with @tf.autograph.experimental.do_not_convert
+***************************** elapsed_time is:  20.020593881607056
+TEST: average propensity for treated: 0.20210568606853485 and untreated: 0.18923591077327728
+TRAIN: average propensity for treated: 0.1967218667268753 and untreated: 0.1831672489643097
+Is targeted regularization: False
+***************************** elapsed_time is:  26.723650217056274
+TEST: average propensity for treated: 0.203672856092453 and untreated: 0.1911410242319107
+TRAIN: average propensity for treated: 0.19713254272937775 and untreated: 0.1854979544878006
+++++ 10 / 63 ---> /local_home/ag62216/var/dragonnet/dat/ihdp/csv/ihdp_npci_19.csv
+Is targeted regularization: True
+WARNING:tensorflow:AutoGraph could not transform <function make_tarreg_loss.<locals>.tarreg_ATE_unbounded_domain_loss at 0x7fccdc2ee9d0> and will run it as-is.
+Please report this to the TensorFlow team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output.
+Cause: module 'gast' has no attribute 'Index'
+To silence this warning, decorate the function with @tf.autograph.experimental.do_not_convert
+***************************** elapsed_time is:  25.941879272460938
+TEST: average propensity for treated: 0.21288327872753143 and untreated: 0.20126496255397797
+TRAIN: average propensity for treated: 0.20286905765533447 and untreated: 0.19536234438419342
+Is targeted regularization: False
+***************************** elapsed_time is:  22.16777205467224
+TEST: average propensity for treated: 0.21233028173446655 and untreated: 0.19553643465042114
+TRAIN: average propensity for treated: 0.20291025936603546 and untreated: 0.1892234981060028
+++++ 11 / 62 ---> /local_home/ag62216/var/dragonnet/dat/ihdp/csv/ihdp_npci_2.csv
+Is targeted regularization: True
+WARNING:tensorflow:AutoGraph could not transform <function make_tarreg_loss.<locals>.tarreg_ATE_unbounded_domain_loss at 0x7fccf8052ca0> and will run it as-is.
+Please report this to the TensorFlow team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output.
+Cause: module 'gast' has no attribute 'Index'
+To silence this warning, decorate the function with @tf.autograph.experimental.do_not_convert
+***************************** elapsed_time is:  14.956517696380615
+TEST: average propensity for treated: 0.2093537151813507 and untreated: 0.1993415206670761
+TRAIN: average propensity for treated: 0.20022936165332794 and untreated: 0.19416874647140503
+Is targeted regularization: False
+***************************** elapsed_time is:  25.920425415039062
+TEST: average propensity for treated: 0.20924511551856995 and untreated: 0.19921159744262695
+TRAIN: average propensity for treated: 0.20031917095184326 and untreated: 0.1938832849264145
+++++ 12 / 63 ---> /local_home/ag62216/var/dragonnet/dat/ihdp/csv/ihdp_npci_20.csv
+Is targeted regularization: True
+WARNING:tensorflow:AutoGraph could not transform <function make_tarreg_loss.<locals>.tarreg_ATE_unbounded_domain_loss at 0x7fcd8012d1f0> and will run it as-is.
+Please report this to the TensorFlow team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output.
+Cause: module 'gast' has no attribute 'Index'
+To silence this warning, decorate the function with @tf.autograph.experimental.do_not_convert
+***************************** elapsed_time is:  17.945369005203247
+TEST: average propensity for treated: 0.20519503951072693 and untreated: 0.18927796185016632
+TRAIN: average propensity for treated: 0.19887325167655945 and untreated: 0.18304690718650818
+Is targeted regularization: False
+***************************** elapsed_time is:  25.332024812698364
+TEST: average propensity for treated: 0.20552338659763336 and untreated: 0.18914179503917694
+TRAIN: average propensity for treated: 0.1989748626947403 and untreated: 0.1828446388244629
+++++ 13 / 63 ---> /local_home/ag62216/var/dragonnet/dat/ihdp/csv/ihdp_npci_21.csv
+Is targeted regularization: True
+WARNING:tensorflow:AutoGraph could not transform <function make_tarreg_loss.<locals>.tarreg_ATE_unbounded_domain_loss at 0x7fccf819d9d0> and will run it as-is.
+Please report this to the TensorFlow team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output.
+Cause: module 'gast' has no attribute 'Index'
+To silence this warning, decorate the function with @tf.autograph.experimental.do_not_convert
+***************************** elapsed_time is:  27.61579728126526
+TEST: average propensity for treated: 0.20398171246051788 and untreated: 0.18763741850852966
+TRAIN: average propensity for treated: 0.19851276278495789 and untreated: 0.18150390684604645
+Is targeted regularization: False
+***************************** elapsed_time is:  25.821756601333618
+TEST: average propensity for treated: 0.20756562054157257 and untreated: 0.19293175637722015
+TRAIN: average propensity for treated: 0.19943128526210785 and untreated: 0.18689872324466705
+++++ 14 / 63 ---> /local_home/ag62216/var/dragonnet/dat/ihdp/csv/ihdp_npci_22.csv
+Is targeted regularization: True
+WARNING:tensorflow:AutoGraph could not transform <function make_tarreg_loss.<locals>.tarreg_ATE_unbounded_domain_loss at 0x7fccf80e1ca0> and will run it as-is.
+Please report this to the TensorFlow team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output.
+Cause: module 'gast' has no attribute 'Index'
+To silence this warning, decorate the function with @tf.autograph.experimental.do_not_convert
+***************************** elapsed_time is:  17.89191770553589
+TEST: average propensity for treated: 0.20733174681663513 and untreated: 0.1948729157447815
+TRAIN: average propensity for treated: 0.19922807812690735 and untreated: 0.1893729269504547
+Is targeted regularization: False
+***************************** elapsed_time is:  21.933790683746338
+TEST: average propensity for treated: 0.2133537232875824 and untreated: 0.1999007761478424
+TRAIN: average propensity for treated: 0.20311136543750763 and untreated: 0.19399084150791168
+++++ 15 / 63 ---> /local_home/ag62216/var/dragonnet/dat/ihdp/csv/ihdp_npci_23.csv
+Is targeted regularization: True
+WARNING:tensorflow:AutoGraph could not transform <function make_tarreg_loss.<locals>.tarreg_ATE_unbounded_domain_loss at 0x7fcd80113310> and will run it as-is.
+Please report this to the TensorFlow team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output.
+Cause: module 'gast' has no attribute 'Index'
+To silence this warning, decorate the function with @tf.autograph.experimental.do_not_convert
+***************************** elapsed_time is:  28.54286026954651
+TEST: average propensity for treated: 0.21303412318229675 and untreated: 0.20214411616325378
+TRAIN: average propensity for treated: 0.20292623341083527 and untreated: 0.19648389518260956
+Is targeted regularization: False
+***************************** elapsed_time is:  31.08683156967163
+TEST: average propensity for treated: 0.20733825862407684 and untreated: 0.19390769302845
+TRAIN: average propensity for treated: 0.19907677173614502 and untreated: 0.1880386620759964
+++++ 16 / 63 ---> /local_home/ag62216/var/dragonnet/dat/ihdp/csv/ihdp_npci_24.csv
+Is targeted regularization: True
+WARNING:tensorflow:AutoGraph could not transform <function make_tarreg_loss.<locals>.tarreg_ATE_unbounded_domain_loss at 0x7fccdc2ee5e0> and will run it as-is.
+Please report this to the TensorFlow team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output.
+Cause: module 'gast' has no attribute 'Index'
+To silence this warning, decorate the function with @tf.autograph.experimental.do_not_convert
+***************************** elapsed_time is:  18.955815076828003
+TEST: average propensity for treated: 0.20243683457374573 and untreated: 0.18874359130859375
+TRAIN: average propensity for treated: 0.19724348187446594 and untreated: 0.18252146244049072
+Is targeted regularization: False
+***************************** elapsed_time is:  16.76880192756653
+TEST: average propensity for treated: 0.2076740860939026 and untreated: 0.19246521592140198
+TRAIN: average propensity for treated: 0.19958025217056274 and untreated: 0.18634890019893646
+++++ 17 / 63 ---> /local_home/ag62216/var/dragonnet/dat/ihdp/csv/ihdp_npci_25.csv
+Is targeted regularization: True
+WARNING:tensorflow:AutoGraph could not transform <function make_tarreg_loss.<locals>.tarreg_ATE_unbounded_domain_loss at 0x7fccc0673280> and will run it as-is.
+Please report this to the TensorFlow team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output.
+Cause: module 'gast' has no attribute 'Index'
+To silence this warning, decorate the function with @tf.autograph.experimental.do_not_convert
+***************************** elapsed_time is:  16.792365550994873
+TEST: average propensity for treated: 0.20690670609474182 and untreated: 0.19397801160812378
+TRAIN: average propensity for treated: 0.19901379942893982 and untreated: 0.1881759762763977
+Is targeted regularization: False
+***************************** elapsed_time is:  23.002964973449707
+TEST: average propensity for treated: 0.20733825862407684 and untreated: 0.19390769302845
+TRAIN: average propensity for treated: 0.19907677173614502 and untreated: 0.1880386620759964
+++++ 18 / 63 ---> /local_home/ag62216/var/dragonnet/dat/ihdp/csv/ihdp_npci_26.csv
+Is targeted regularization: True
+WARNING:tensorflow:AutoGraph could not transform <function make_tarreg_loss.<locals>.tarreg_ATE_unbounded_domain_loss at 0x7fccf81443a0> and will run it as-is.
+Please report this to the TensorFlow team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output.
+Cause: module 'gast' has no attribute 'Index'
+To silence this warning, decorate the function with @tf.autograph.experimental.do_not_convert
+***************************** elapsed_time is:  21.97027564048767
+TEST: average propensity for treated: 0.20278388261795044 and untreated: 0.19166091084480286
+TRAIN: average propensity for treated: 0.19676350057125092 and untreated: 0.18637098371982574
+Is targeted regularization: False
+***************************** elapsed_time is:  21.237602710723877
+TEST: average propensity for treated: 0.2030654102563858 and untreated: 0.191729336977005
+TRAIN: average propensity for treated: 0.1966707408428192 and untreated: 0.18633350729942322
+++++ 19 / 63 ---> /local_home/ag62216/var/dragonnet/dat/ihdp/csv/ihdp_npci_27.csv
+Is targeted regularization: True
+WARNING:tensorflow:AutoGraph could not transform <function make_tarreg_loss.<locals>.tarreg_ATE_unbounded_domain_loss at 0x7fccdc46eaf0> and will run it as-is.
+Please report this to the TensorFlow team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output.
+Cause: module 'gast' has no attribute 'Index'
+To silence this warning, decorate the function with @tf.autograph.experimental.do_not_convert
+***************************** elapsed_time is:  18.121121883392334
+TEST: average propensity for treated: 0.2067030519247055 and untreated: 0.1908867061138153
+TRAIN: average propensity for treated: 0.19947585463523865 and untreated: 0.1848030388355255
+Is targeted regularization: False
+***************************** elapsed_time is:  23.52183222770691
+TEST: average propensity for treated: 0.2077191174030304 and untreated: 0.1919105052947998
+TRAIN: average propensity for treated: 0.19974802434444427 and untreated: 0.1857130378484726
+++++ 20 / 63 ---> /local_home/ag62216/var/dragonnet/dat/ihdp/csv/ihdp_npci_28.csv
+Is targeted regularization: True
+WARNING:tensorflow:AutoGraph could not transform <function make_tarreg_loss.<locals>.tarreg_ATE_unbounded_domain_loss at 0x7fccdc2bb040> and will run it as-is.
+Please report this to the TensorFlow team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output.
+Cause: module 'gast' has no attribute 'Index'
+To silence this warning, decorate the function with @tf.autograph.experimental.do_not_convert
+***************************** elapsed_time is:  21.93122911453247
+TEST: average propensity for treated: 0.20251096785068512 and untreated: 0.1888986974954605
+TRAIN: average propensity for treated: 0.19703035056591034 and untreated: 0.1829627901315689
+Is targeted regularization: False
+***************************** elapsed_time is:  25.5369656085968
+TEST: average propensity for treated: 0.20398442447185516 and untreated: 0.19084285199642181
+TRAIN: average propensity for treated: 0.19737456738948822 and untreated: 0.1850864589214325
+++++ 21 / 63 ---> /local_home/ag62216/var/dragonnet/dat/ihdp/csv/ihdp_npci_29.csv
+Is targeted regularization: True
+WARNING:tensorflow:AutoGraph could not transform <function make_tarreg_loss.<locals>.tarreg_ATE_unbounded_domain_loss at 0x7fccc058baf0> and will run it as-is.
+Please report this to the TensorFlow team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output.
+Cause: module 'gast' has no attribute 'Index'
+To silence this warning, decorate the function with @tf.autograph.experimental.do_not_convert
+***************************** elapsed_time is:  19.983838319778442
+TEST: average propensity for treated: 0.20718328654766083 and untreated: 0.19334879517555237
+TRAIN: average propensity for treated: 0.19894489645957947 and untreated: 0.1876184046268463
+Is targeted regularization: False
+***************************** elapsed_time is:  23.201534032821655
+TEST: average propensity for treated: 0.20733825862407684 and untreated: 0.19390769302845
+TRAIN: average propensity for treated: 0.19907677173614502 and untreated: 0.1880386620759964
+++++ 22 / 62 ---> /local_home/ag62216/var/dragonnet/dat/ihdp/csv/ihdp_npci_3.csv
+Is targeted regularization: True
+WARNING:tensorflow:AutoGraph could not transform <function make_tarreg_loss.<locals>.tarreg_ATE_unbounded_domain_loss at 0x7fcd8c038c10> and will run it as-is.
+Please report this to the TensorFlow team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output.
+Cause: module 'gast' has no attribute 'Index'
+To silence this warning, decorate the function with @tf.autograph.experimental.do_not_convert
+***************************** elapsed_time is:  14.92093563079834
+TEST: average propensity for treated: 0.2076447606086731 and untreated: 0.19729919731616974
+TRAIN: average propensity for treated: 0.19930697977542877 and untreated: 0.19206394255161285
+Is targeted regularization: False
+***************************** elapsed_time is:  19.423252820968628
+TEST: average propensity for treated: 0.20676757395267487 and untreated: 0.1958286315202713
+TRAIN: average propensity for treated: 0.19865845143795013 and untreated: 0.19040001928806305
+++++ 23 / 63 ---> /local_home/ag62216/var/dragonnet/dat/ihdp/csv/ihdp_npci_30.csv
+Is targeted regularization: True
+WARNING:tensorflow:AutoGraph could not transform <function make_tarreg_loss.<locals>.tarreg_ATE_unbounded_domain_loss at 0x7fcd8c038af0> and will run it as-is.
+Please report this to the TensorFlow team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output.
+Cause: module 'gast' has no attribute 'Index'
+To silence this warning, decorate the function with @tf.autograph.experimental.do_not_convert
+***************************** elapsed_time is:  20.91290521621704
+TEST: average propensity for treated: 0.20291787385940552 and untreated: 0.18971356749534607
+TRAIN: average propensity for treated: 0.1970558613538742 and untreated: 0.1837727278470993
+Is targeted regularization: False
+***************************** elapsed_time is:  28.058076858520508
+TEST: average propensity for treated: 0.2051030993461609 and untreated: 0.1897929459810257
+TRAIN: average propensity for treated: 0.19841323792934418 and untreated: 0.18365325033664703
+++++ 24 / 63 ---> /local_home/ag62216/var/dragonnet/dat/ihdp/csv/ihdp_npci_31.csv
+Is targeted regularization: True
+WARNING:tensorflow:AutoGraph could not transform <function make_tarreg_loss.<locals>.tarreg_ATE_unbounded_domain_loss at 0x7fcd8c02baf0> and will run it as-is.
+Please report this to the TensorFlow team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output.
+Cause: module 'gast' has no attribute 'Index'
+To silence this warning, decorate the function with @tf.autograph.experimental.do_not_convert
+***************************** elapsed_time is:  27.068381309509277
+TEST: average propensity for treated: 0.207595556974411 and untreated: 0.19157348573207855
+TRAIN: average propensity for treated: 0.2000351995229721 and untreated: 0.1853170245885849
+Is targeted regularization: False
+***************************** elapsed_time is:  24.390520811080933
+TEST: average propensity for treated: 0.2078125923871994 and untreated: 0.19156475365161896
+TRAIN: average propensity for treated: 0.1999555379152298 and untreated: 0.18530094623565674
+++++ 25 / 63 ---> /local_home/ag62216/var/dragonnet/dat/ihdp/csv/ihdp_npci_32.csv
+Is targeted regularization: True
+WARNING:tensorflow:AutoGraph could not transform <function make_tarreg_loss.<locals>.tarreg_ATE_unbounded_domain_loss at 0x7fcd2b23d0d0> and will run it as-is.
+Please report this to the TensorFlow team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output.
+Cause: module 'gast' has no attribute 'Index'
+To silence this warning, decorate the function with @tf.autograph.experimental.do_not_convert
+***************************** elapsed_time is:  15.761866331100464
+TEST: average propensity for treated: 0.20613400638103485 and untreated: 0.1912592053413391
+TRAIN: average propensity for treated: 0.19891123473644257 and untreated: 0.18526439368724823
+Is targeted regularization: False
+***************************** elapsed_time is:  37.54842662811279
+TEST: average propensity for treated: 0.2042660117149353 and untreated: 0.18755678832530975
+TRAIN: average propensity for treated: 0.19881686568260193 and untreated: 0.18119746446609497
+++++ 26 / 63 ---> /local_home/ag62216/var/dragonnet/dat/ihdp/csv/ihdp_npci_33.csv
+Is targeted regularization: True
+WARNING:tensorflow:AutoGraph could not transform <function make_tarreg_loss.<locals>.tarreg_ATE_unbounded_domain_loss at 0x7fcd8e548e50> and will run it as-is.
+Please report this to the TensorFlow team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output.
+Cause: module 'gast' has no attribute 'Index'
+To silence this warning, decorate the function with @tf.autograph.experimental.do_not_convert
+***************************** elapsed_time is:  17.726726055145264
+TEST: average propensity for treated: 0.2024049460887909 and untreated: 0.1886340230703354
+TRAIN: average propensity for treated: 0.19749075174331665 and untreated: 0.18252983689308167
+Is targeted regularization: False
+***************************** elapsed_time is:  25.541251182556152
+TEST: average propensity for treated: 0.207008495926857 and untreated: 0.1947287768125534
+TRAIN: average propensity for treated: 0.1987813115119934 and untreated: 0.18905016779899597
+++++ 27 / 63 ---> /local_home/ag62216/var/dragonnet/dat/ihdp/csv/ihdp_npci_34.csv
+Is targeted regularization: True
+WARNING:tensorflow:AutoGraph could not transform <function make_tarreg_loss.<locals>.tarreg_ATE_unbounded_domain_loss at 0x7fcd8e49fa60> and will run it as-is.
+Please report this to the TensorFlow team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output.
+Cause: module 'gast' has no attribute 'Index'
+To silence this warning, decorate the function with @tf.autograph.experimental.do_not_convert
+***************************** elapsed_time is:  29.303881883621216
+TEST: average propensity for treated: 0.20079056918621063 and untreated: 0.18670226633548737
+TRAIN: average propensity for treated: 0.19736440479755402 and untreated: 0.1805858612060547
+Is targeted regularization: False
+***************************** elapsed_time is:  29.72601294517517
+TEST: average propensity for treated: 0.20733825862407684 and untreated: 0.19390769302845
+TRAIN: average propensity for treated: 0.19907677173614502 and untreated: 0.1880386620759964
+++++ 28 / 63 ---> /local_home/ag62216/var/dragonnet/dat/ihdp/csv/ihdp_npci_35.csv
+Is targeted regularization: True
+WARNING:tensorflow:AutoGraph could not transform <function make_tarreg_loss.<locals>.tarreg_ATE_unbounded_domain_loss at 0x7fccf819daf0> and will run it as-is.
+Please report this to the TensorFlow team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output.
+Cause: module 'gast' has no attribute 'Index'
+To silence this warning, decorate the function with @tf.autograph.experimental.do_not_convert
+***************************** elapsed_time is:  25.865713119506836
+TEST: average propensity for treated: 0.2081746906042099 and untreated: 0.1927727907896042
+TRAIN: average propensity for treated: 0.19974784553050995 and untreated: 0.18662913143634796
+Is targeted regularization: False
+***************************** elapsed_time is:  23.453200817108154
+TEST: average propensity for treated: 0.2077900916337967 and untreated: 0.19201429188251495
+TRAIN: average propensity for treated: 0.19977512955665588 and untreated: 0.1858217567205429
+++++ 29 / 63 ---> /local_home/ag62216/var/dragonnet/dat/ihdp/csv/ihdp_npci_36.csv
+Is targeted regularization: True
+WARNING:tensorflow:AutoGraph could not transform <function make_tarreg_loss.<locals>.tarreg_ATE_unbounded_domain_loss at 0x7fccf80e1a60> and will run it as-is.
+Please report this to the TensorFlow team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output.
+Cause: module 'gast' has no attribute 'Index'
+To silence this warning, decorate the function with @tf.autograph.experimental.do_not_convert
+***************************** elapsed_time is:  17.5096755027771
+TEST: average propensity for treated: 0.2043878138065338 and untreated: 0.18744304776191711
+TRAIN: average propensity for treated: 0.1989971399307251 and untreated: 0.18102425336837769
+Is targeted regularization: False
+***************************** elapsed_time is:  18.98063564300537
+TEST: average propensity for treated: 0.20543846487998962 and untreated: 0.18899396061897278
+TRAIN: average propensity for treated: 0.1989753097295761 and untreated: 0.18268637359142303
+++++ 30 / 63 ---> /local_home/ag62216/var/dragonnet/dat/ihdp/csv/ihdp_npci_37.csv
+Is targeted regularization: True
+WARNING:tensorflow:AutoGraph could not transform <function make_tarreg_loss.<locals>.tarreg_ATE_unbounded_domain_loss at 0x7fccc070b700> and will run it as-is.
+Please report this to the TensorFlow team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output.
+Cause: module 'gast' has no attribute 'Index'
+To silence this warning, decorate the function with @tf.autograph.experimental.do_not_convert
+***************************** elapsed_time is:  23.686137437820435
+TEST: average propensity for treated: 0.19994157552719116 and untreated: 0.1870894581079483
+TRAIN: average propensity for treated: 0.1963251531124115 and untreated: 0.18159571290016174
+Is targeted regularization: False
+***************************** elapsed_time is:  25.960885047912598
+TEST: average propensity for treated: 0.20130889117717743 and untreated: 0.18949994444847107
+TRAIN: average propensity for treated: 0.1961176097393036 and untreated: 0.18408207595348358
+++++ 31 / 63 ---> /local_home/ag62216/var/dragonnet/dat/ihdp/csv/ihdp_npci_38.csv
+Is targeted regularization: True
+WARNING:tensorflow:AutoGraph could not transform <function make_tarreg_loss.<locals>.tarreg_ATE_unbounded_domain_loss at 0x7fcc987cdf70> and will run it as-is.
+Please report this to the TensorFlow team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output.
+Cause: module 'gast' has no attribute 'Index'
+To silence this warning, decorate the function with @tf.autograph.experimental.do_not_convert
+***************************** elapsed_time is:  20.210811853408813
+TEST: average propensity for treated: 0.20267561078071594 and untreated: 0.18709106743335724
+TRAIN: average propensity for treated: 0.19821760058403015 and untreated: 0.1806185394525528
+Is targeted regularization: False
+***************************** elapsed_time is:  23.52766489982605
+TEST: average propensity for treated: 0.20793019235134125 and untreated: 0.19069164991378784
+TRAIN: average propensity for treated: 0.20040014386177063 and untreated: 0.18428725004196167
+++++ 32 / 63 ---> /local_home/ag62216/var/dragonnet/dat/ihdp/csv/ihdp_npci_39.csv
+Is targeted regularization: True
+WARNING:tensorflow:AutoGraph could not transform <function make_tarreg_loss.<locals>.tarreg_ATE_unbounded_domain_loss at 0x7fccf8144160> and will run it as-is.
+Please report this to the TensorFlow team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output.
+Cause: module 'gast' has no attribute 'Index'
+To silence this warning, decorate the function with @tf.autograph.experimental.do_not_convert
+***************************** elapsed_time is:  26.729027271270752
+TEST: average propensity for treated: 0.2074962556362152 and untreated: 0.1920793652534485
+TRAIN: average propensity for treated: 0.1997925043106079 and untreated: 0.18594054877758026
+Is targeted regularization: False
+***************************** elapsed_time is:  34.62590265274048
+TEST: average propensity for treated: 0.2077900916337967 and untreated: 0.19201429188251495
+TRAIN: average propensity for treated: 0.19977512955665588 and untreated: 0.1858217567205429
+++++ 33 / 62 ---> /local_home/ag62216/var/dragonnet/dat/ihdp/csv/ihdp_npci_4.csv
+Is targeted regularization: True
+WARNING:tensorflow:AutoGraph could not transform <function make_tarreg_loss.<locals>.tarreg_ATE_unbounded_domain_loss at 0x7fcd8c02b820> and will run it as-is.
+Please report this to the TensorFlow team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output.
+Cause: module 'gast' has no attribute 'Index'
+To silence this warning, decorate the function with @tf.autograph.experimental.do_not_convert
+***************************** elapsed_time is:  18.639028310775757
+TEST: average propensity for treated: 0.20681695640087128 and untreated: 0.19164568185806274
+TRAIN: average propensity for treated: 0.19915831089019775 and untreated: 0.18550704419612885
+Is targeted regularization: False
+***************************** elapsed_time is:  24.579594612121582
+TEST: average propensity for treated: 0.20692278444766998 and untreated: 0.19135509431362152
+TRAIN: average propensity for treated: 0.19929425418376923 and untreated: 0.18518543243408203
+++++ 34 / 63 ---> /local_home/ag62216/var/dragonnet/dat/ihdp/csv/ihdp_npci_40.csv
+Is targeted regularization: True
+WARNING:tensorflow:AutoGraph could not transform <function make_tarreg_loss.<locals>.tarreg_ATE_unbounded_domain_loss at 0x7fccc03e59d0> and will run it as-is.
+Please report this to the TensorFlow team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output.
+Cause: module 'gast' has no attribute 'Index'
+To silence this warning, decorate the function with @tf.autograph.experimental.do_not_convert
+***************************** elapsed_time is:  28.50385856628418
+TEST: average propensity for treated: 0.20750641822814941 and untreated: 0.19276756048202515
+TRAIN: average propensity for treated: 0.1995457410812378 and untreated: 0.18665902316570282
+Is targeted regularization: False
+***************************** elapsed_time is:  35.86308979988098
+TEST: average propensity for treated: 0.20767074823379517 and untreated: 0.19246026873588562
+TRAIN: average propensity for treated: 0.19957882165908813 and untreated: 0.18634377419948578
+++++ 35 / 63 ---> /local_home/ag62216/var/dragonnet/dat/ihdp/csv/ihdp_npci_41.csv
+Is targeted regularization: True
+WARNING:tensorflow:AutoGraph could not transform <function make_tarreg_loss.<locals>.tarreg_ATE_unbounded_domain_loss at 0x7fccdc42e820> and will run it as-is.
+Please report this to the TensorFlow team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output.
+Cause: module 'gast' has no attribute 'Index'
+To silence this warning, decorate the function with @tf.autograph.experimental.do_not_convert
+***************************** elapsed_time is:  14.848290920257568
+TEST: average propensity for treated: 0.20481711626052856 and untreated: 0.1955942064523697
+TRAIN: average propensity for treated: 0.19757933914661407 and untreated: 0.1905708611011505
+Is targeted regularization: False
+***************************** elapsed_time is:  24.66100001335144
+TEST: average propensity for treated: 0.20267701148986816 and untreated: 0.19195793569087982
+TRAIN: average propensity for treated: 0.19645661115646362 and untreated: 0.18670246005058289
+++++ 36 / 63 ---> /local_home/ag62216/var/dragonnet/dat/ihdp/csv/ihdp_npci_42.csv
+Is targeted regularization: True
+WARNING:tensorflow:AutoGraph could not transform <function make_tarreg_loss.<locals>.tarreg_ATE_unbounded_domain_loss at 0x7fcd2b23d0d0> and will run it as-is.
+Please report this to the TensorFlow team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output.
+Cause: module 'gast' has no attribute 'Index'
+To silence this warning, decorate the function with @tf.autograph.experimental.do_not_convert
+***************************** elapsed_time is:  12.821601390838623
+TEST: average propensity for treated: 0.20762647688388824 and untreated: 0.19617865979671478
+TRAIN: average propensity for treated: 0.19938647747039795 and untreated: 0.19078874588012695
+Is targeted regularization: False
+***************************** elapsed_time is:  26.34360122680664
+TEST: average propensity for treated: 0.20804400742053986 and untreated: 0.19360589981079102
+TRAIN: average propensity for treated: 0.1996709257364273 and untreated: 0.18759949505329132
+++++ 37 / 63 ---> /local_home/ag62216/var/dragonnet/dat/ihdp/csv/ihdp_npci_43.csv
+Is targeted regularization: True
+WARNING:tensorflow:AutoGraph could not transform <function make_tarreg_loss.<locals>.tarreg_ATE_unbounded_domain_loss at 0x7fccdc505550> and will run it as-is.
+Please report this to the TensorFlow team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output.
+Cause: module 'gast' has no attribute 'Index'
+To silence this warning, decorate the function with @tf.autograph.experimental.do_not_convert
+***************************** elapsed_time is:  36.70669150352478
+TEST: average propensity for treated: 0.2051895558834076 and untreated: 0.1896325945854187
+TRAIN: average propensity for treated: 0.19855353236198425 and untreated: 0.18355721235275269
+Is targeted regularization: False
+***************************** elapsed_time is:  27.04512357711792
+TEST: average propensity for treated: 0.20530551671981812 and untreated: 0.18945850431919098
+TRAIN: average propensity for treated: 0.19870872795581818 and untreated: 0.1832420974969864
+++++ 38 / 63 ---> /local_home/ag62216/var/dragonnet/dat/ihdp/csv/ihdp_npci_44.csv
+Is targeted regularization: True
+WARNING:tensorflow:AutoGraph could not transform <function make_tarreg_loss.<locals>.tarreg_ATE_unbounded_domain_loss at 0x7fcd2b1b7ee0> and will run it as-is.
+Please report this to the TensorFlow team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output.
+Cause: module 'gast' has no attribute 'Index'
+To silence this warning, decorate the function with @tf.autograph.experimental.do_not_convert
+***************************** elapsed_time is:  17.528655290603638
+TEST: average propensity for treated: 0.20575302839279175 and untreated: 0.18863624334335327
+TRAIN: average propensity for treated: 0.19939856231212616 and untreated: 0.18238964676856995
+Is targeted regularization: False
+***************************** elapsed_time is:  25.35386562347412
+TEST: average propensity for treated: 0.2078114002943039 and untreated: 0.19156289100646973
+TRAIN: average propensity for treated: 0.19995518028736115 and untreated: 0.18529900908470154
+++++ 39 / 63 ---> /local_home/ag62216/var/dragonnet/dat/ihdp/csv/ihdp_npci_45.csv
+Is targeted regularization: True
+WARNING:tensorflow:AutoGraph could not transform <function make_tarreg_loss.<locals>.tarreg_ATE_unbounded_domain_loss at 0x7fcd8e49fca0> and will run it as-is.
+Please report this to the TensorFlow team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output.
+Cause: module 'gast' has no attribute 'Index'
+To silence this warning, decorate the function with @tf.autograph.experimental.do_not_convert
+***************************** elapsed_time is:  31.611754417419434
+TEST: average propensity for treated: 0.20281675457954407 and untreated: 0.1867222636938095
+TRAIN: average propensity for treated: 0.19824418425559998 and untreated: 0.1805860698223114
+Is targeted regularization: False
+***************************** elapsed_time is:  24.599143028259277
+TEST: average propensity for treated: 0.20733825862407684 and untreated: 0.19390769302845
+TRAIN: average propensity for treated: 0.19907677173614502 and untreated: 0.1880386620759964
+++++ 40 / 63 ---> /local_home/ag62216/var/dragonnet/dat/ihdp/csv/ihdp_npci_46.csv
+Is targeted regularization: True
+WARNING:tensorflow:AutoGraph could not transform <function make_tarreg_loss.<locals>.tarreg_ATE_unbounded_domain_loss at 0x7fccc077eee0> and will run it as-is.
+Please report this to the TensorFlow team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output.
+Cause: module 'gast' has no attribute 'Index'
+To silence this warning, decorate the function with @tf.autograph.experimental.do_not_convert
+***************************** elapsed_time is:  19.55736780166626
+TEST: average propensity for treated: 0.20710965991020203 and untreated: 0.1932258903980255
+TRAIN: average propensity for treated: 0.1991041749715805 and untreated: 0.18716900050640106
+Is targeted regularization: False
+***************************** elapsed_time is:  22.561692714691162
+TEST: average propensity for treated: 0.20878966152668 and untreated: 0.1919347643852234
+TRAIN: average propensity for treated: 0.2007027417421341 and untreated: 0.18558970093727112
+++++ 41 / 63 ---> /local_home/ag62216/var/dragonnet/dat/ihdp/csv/ihdp_npci_47.csv
+Is targeted regularization: True
+WARNING:tensorflow:AutoGraph could not transform <function make_tarreg_loss.<locals>.tarreg_ATE_unbounded_domain_loss at 0x7fccdc2eea60> and will run it as-is.
+Please report this to the TensorFlow team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output.
+Cause: module 'gast' has no attribute 'Index'
+To silence this warning, decorate the function with @tf.autograph.experimental.do_not_convert
+***************************** elapsed_time is:  25.237147331237793
+TEST: average propensity for treated: 0.20757471024990082 and untreated: 0.19190461933612823
+TRAIN: average propensity for treated: 0.1999167948961258 and untreated: 0.1858360469341278
+Is targeted regularization: False
+***************************** elapsed_time is:  29.251064777374268
+TEST: average propensity for treated: 0.2078125923871994 and untreated: 0.19156475365161896
+TRAIN: average propensity for treated: 0.1999555379152298 and untreated: 0.18530094623565674
+++++ 42 / 63 ---> /local_home/ag62216/var/dragonnet/dat/ihdp/csv/ihdp_npci_48.csv
+Is targeted regularization: True
+WARNING:tensorflow:AutoGraph could not transform <function make_tarreg_loss.<locals>.tarreg_ATE_unbounded_domain_loss at 0x7fccc0418160> and will run it as-is.
+Please report this to the TensorFlow team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output.
+Cause: module 'gast' has no attribute 'Index'
+To silence this warning, decorate the function with @tf.autograph.experimental.do_not_convert
+***************************** elapsed_time is:  20.484440565109253
+TEST: average propensity for treated: 0.2006882280111313 and untreated: 0.18772846460342407
+TRAIN: average propensity for treated: 0.19626925885677338 and untreated: 0.18224555253982544
+Is targeted regularization: False
+***************************** elapsed_time is:  26.094224452972412
+TEST: average propensity for treated: 0.20280666649341583 and untreated: 0.18872499465942383
+TRAIN: average propensity for treated: 0.19724690914154053 and untreated: 0.18282248079776764
+++++ 43 / 63 ---> /local_home/ag62216/var/dragonnet/dat/ihdp/csv/ihdp_npci_49.csv
+Is targeted regularization: True
+WARNING:tensorflow:AutoGraph could not transform <function make_tarreg_loss.<locals>.tarreg_ATE_unbounded_domain_loss at 0x7fcc987cd040> and will run it as-is.
+Please report this to the TensorFlow team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output.
+Cause: module 'gast' has no attribute 'Index'
+To silence this warning, decorate the function with @tf.autograph.experimental.do_not_convert
+***************************** elapsed_time is:  21.00886631011963
+TEST: average propensity for treated: 0.19959522783756256 and untreated: 0.18434260785579681
+TRAIN: average propensity for treated: 0.19814565777778625 and untreated: 0.1783445179462433
+Is targeted regularization: False
+***************************** elapsed_time is:  29.23371648788452
+TEST: average propensity for treated: 0.19972054660320282 and untreated: 0.1822310984134674
+TRAIN: average propensity for treated: 0.2010459303855896 and untreated: 0.1758524477481842
+++++ 44 / 62 ---> /local_home/ag62216/var/dragonnet/dat/ihdp/csv/ihdp_npci_5.csv
+Is targeted regularization: True
+WARNING:tensorflow:AutoGraph could not transform <function make_tarreg_loss.<locals>.tarreg_ATE_unbounded_domain_loss at 0x7fccc0315ca0> and will run it as-is.
+Please report this to the TensorFlow team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output.
+Cause: module 'gast' has no attribute 'Index'
+To silence this warning, decorate the function with @tf.autograph.experimental.do_not_convert
+***************************** elapsed_time is:  21.313334941864014
+TEST: average propensity for treated: 0.20193471014499664 and untreated: 0.18740811944007874
+TRAIN: average propensity for treated: 0.19739191234111786 and untreated: 0.18130294978618622
+Is targeted regularization: False
+***************************** elapsed_time is:  19.493950128555298
+TEST: average propensity for treated: 0.2057943493127823 and untreated: 0.18838678300380707
+TRAIN: average propensity for treated: 0.19956646859645844 and untreated: 0.18193712830543518
+++++ 45 / 63 ---> /local_home/ag62216/var/dragonnet/dat/ihdp/csv/ihdp_npci_50.csv
+Is targeted regularization: True
+WARNING:tensorflow:AutoGraph could not transform <function make_tarreg_loss.<locals>.tarreg_ATE_unbounded_domain_loss at 0x7fccdc42e280> and will run it as-is.
+Please report this to the TensorFlow team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output.
+Cause: module 'gast' has no attribute 'Index'
+To silence this warning, decorate the function with @tf.autograph.experimental.do_not_convert
+***************************** elapsed_time is:  17.046311378479004
+TEST: average propensity for treated: 0.2050086408853531 and untreated: 0.19408129155635834
+TRAIN: average propensity for treated: 0.19785501062870026 and untreated: 0.18850718438625336
+Is targeted regularization: False
+***************************** elapsed_time is:  23.83566927909851
+TEST: average propensity for treated: 0.2066633254289627 and untreated: 0.19567984342575073
+TRAIN: average propensity for treated: 0.19859598577022552 and untreated: 0.19024571776390076
+++++ 46 / 62 ---> /local_home/ag62216/var/dragonnet/dat/ihdp/csv/ihdp_npci_6.csv
+Is targeted regularization: True
+WARNING:tensorflow:AutoGraph could not transform <function make_tarreg_loss.<locals>.tarreg_ATE_unbounded_domain_loss at 0x7fccdc2ee0d0> and will run it as-is.
+Please report this to the TensorFlow team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output.
+Cause: module 'gast' has no attribute 'Index'
+To silence this warning, decorate the function with @tf.autograph.experimental.do_not_convert
+***************************** elapsed_time is:  12.595750093460083
+TEST: average propensity for treated: 0.20700104534626007 and untreated: 0.19473986327648163
+TRAIN: average propensity for treated: 0.19912037253379822 and untreated: 0.18932479619979858
+Is targeted regularization: False
+***************************** elapsed_time is:  17.352213859558105
+TEST: average propensity for treated: 0.20753148198127747 and untreated: 0.1954592764377594
+TRAIN: average propensity for treated: 0.1990918219089508 and untreated: 0.189805805683136
+++++ 47 / 62 ---> /local_home/ag62216/var/dragonnet/dat/ihdp/csv/ihdp_npci_7.csv
+Is targeted regularization: True
+WARNING:tensorflow:AutoGraph could not transform <function make_tarreg_loss.<locals>.tarreg_ATE_unbounded_domain_loss at 0x7fccc06739d0> and will run it as-is.
+Please report this to the TensorFlow team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output.
+Cause: module 'gast' has no attribute 'Index'
+To silence this warning, decorate the function with @tf.autograph.experimental.do_not_convert
+***************************** elapsed_time is:  20.500380992889404
+TEST: average propensity for treated: 0.20149917900562286 and untreated: 0.1904590129852295
+TRAIN: average propensity for treated: 0.19613076746463776 and untreated: 0.18531683087348938
+Is targeted regularization: False
+***************************** elapsed_time is:  28.526275873184204
+TEST: average propensity for treated: 0.20426307618618011 and untreated: 0.18829277157783508
+TRAIN: average propensity for treated: 0.19842194020748138 and untreated: 0.18204574286937714
+++++ 48 / 62 ---> /local_home/ag62216/var/dragonnet/dat/ihdp/csv/ihdp_npci_8.csv
+Is targeted regularization: True
+WARNING:tensorflow:AutoGraph could not transform <function make_tarreg_loss.<locals>.tarreg_ATE_unbounded_domain_loss at 0x7fcd8012d1f0> and will run it as-is.
+Please report this to the TensorFlow team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output.
+Cause: module 'gast' has no attribute 'Index'
+To silence this warning, decorate the function with @tf.autograph.experimental.do_not_convert
+***************************** elapsed_time is:  17.749719858169556
+TEST: average propensity for treated: 0.21018943190574646 and untreated: 0.1969326287508011
+TRAIN: average propensity for treated: 0.20085619390010834 and untreated: 0.19076736271381378
+Is targeted regularization: False
+***************************** elapsed_time is:  20.485096216201782
+TEST: average propensity for treated: 0.21231845021247864 and untreated: 0.19862177968025208
+TRAIN: average propensity for treated: 0.20236046612262726 and untreated: 0.19269058108329773
+++++ 49 / 62 ---> /local_home/ag62216/var/dragonnet/dat/ihdp/csv/ihdp_npci_9.csv
+Is targeted regularization: True
+***************************** elapsed_time is:  16.727712631225586
+TEST: average propensity for treated: 0.21666951477527618 and untreated: 0.20726080238819122
+TRAIN: average propensity for treated: 0.2060270756483078 and untreated: 0.20173904299736023
+Is targeted regularization: False
+***************************** elapsed_time is:  24.487107753753662
+TEST: average propensity for treated: 0.2140175998210907 and untreated: 0.20320549607276917
+TRAIN: average propensity for treated: 0.20371288061141968 and untreated: 0.1976432055234909
+******************** ihdp_ate ***********************
+************ TRAIN *********************
+The back door adjustment result is below
+{'tarnet': {'baseline': 0.16143746166143738, 'targeted_regularization': 0.14496688418892398}, 'dragonnet': {'baseline': 0.1473357450658894, 'targeted_regularization': 0.2816522260540111}, 'nednet': {'baseline': 0, 'targeted_regularization': 0}}
+the tmle estimator result is this 
+{'tarnet': {'baseline': 0.1605841110028335, 'targeted_regularization': 0.1805028919093845}, 'dragonnet': {'baseline': 0.1574613132743068, 'targeted_regularization': 0.14565543186980867}, 'nednet': {'baseline': 0, 'targeted_regularization': 0}}
+************ TEST *********************
+The back door adjustment result is below
+{'tarnet': {'baseline': 0.3162446683886756, 'targeted_regularization': 0.273704028791873}, 'dragonnet': {'baseline': 0.3255043553962267, 'targeted_regularization': 0.19121686435364513}, 'nednet': {'baseline': 0, 'targeted_regularization': 0}}
+the tmle estimator result is this 
+{'tarnet': {'baseline': 0.2796843155134958, 'targeted_regularization': 0.27590103283728135}, 'dragonnet': {'baseline': 0.2645848430152591, 'targeted_regularization': 0.26716736650641765}, 'nednet': {'baseline': 0, 'targeted_regularization': 0}}

@@ -11,7 +11,7 @@ from keras.callbacks import EarlyStopping, ModelCheckpoint, TensorBoard, ReduceL
 from experiment.idhp_data import *
 
 
-def _split_output(yt_hat, t, y, y_scaler, x, index):
+def _split_output(yt_hat, t, y, y_scaler, x, index,split='TRAIN'):
     q_t0 = y_scaler.inverse_transform(yt_hat[:, 0].copy())
     q_t1 = y_scaler.inverse_transform(yt_hat[:, 1].copy())
     g = yt_hat[:, 2].copy()
@@ -22,7 +22,7 @@ def _split_output(yt_hat, t, y, y_scaler, x, index):
         eps = np.zeros_like(yt_hat[:, 2])
 
     y = y_scaler.inverse_transform(y.copy())
-    var = "average propensity for treated: {} and untreated: {}".format(g[t.squeeze() == 1.].mean(),
+    var = "{}: average propensity for treated: {} and untreated: {}".format(split,g[t.squeeze() == 1.].mean(),
                                                                         g[t.squeeze() == 0.].mean())
     print(var)
 
@@ -30,7 +30,7 @@ def _split_output(yt_hat, t, y, y_scaler, x, index):
 
 
 def train_and_predict_dragons(t, y_unscaled, x, targeted_regularization=True, output_dir='',
-                              knob_loss=dragonnet_loss_binarycross, ratio=1., dragon='', val_split=0.2, batch_size=64):
+                              knob_loss=dragonnet_loss_binarycross, ratio=1., dragon='', val_split=0.3, batch_size=64):
     verbose = 0
     y_scaler = StandardScaler().fit(y_unscaled)
     y = y_scaler.transform(y_unscaled)
@@ -57,7 +57,8 @@ def train_and_predict_dragons(t, y_unscaled, x, targeted_regularization=True, ou
     #tf.random.set_random_seed(i)
     tf.random.set_seed(i)
     np.random.seed(i)
-    train_index, test_index = train_test_split(np.arange(x.shape[0]), test_size=val_split, random_state=1)
+    train_index, test_index = train_test_split(np.arange(x.shape[0]), test_size=0.1, random_state=1)
+    ## from paper: We randomly split the data into train/validation/test with proportion 63/27/10 and report the in sample and out of sample estimation errors.
     #test_index = train_index
 
     x_train, x_test = x[train_index], x[test_index]
@@ -108,8 +109,8 @@ def train_and_predict_dragons(t, y_unscaled, x, targeted_regularization=True, ou
     yt_hat_test = dragonnet.predict(x_test)
     yt_hat_train = dragonnet.predict(x_train)
 
-    test_outputs += [_split_output(yt_hat_test, t_test, y_test, y_scaler, x_test, test_index)]
-    train_outputs += [_split_output(yt_hat_train, t_train, y_train, y_scaler, x_train, train_index)]
+    test_outputs += [_split_output(yt_hat_test, t_test, y_test, y_scaler, x_test, test_index,split='TEST')]
+    train_outputs += [_split_output(yt_hat_train, t_train, y_train, y_scaler, x_train, train_index,split='TRAIN')]
     K.clear_session()
 
     return test_outputs, train_outputs
@@ -224,8 +225,8 @@ def train_and_predict_ned(t, y_unscaled, x, targeted_regularization=True, output
     yt_hat_test = np.concatenate([y_hat_test, t_hat_test.reshape(-1, 1)], 1)
     yt_hat_train = np.concatenate([y_hat_train, t_hat_train.reshape(-1, 1)], 1)
 
-    test_outputs += [_split_output(yt_hat_test, t_test, y_test, y_scaler, x_test, test_index)]
-    train_outputs += [_split_output(yt_hat_train, t_train, y_train, y_scaler, x_train, train_index)]
+    test_outputs += [_split_output(yt_hat_test, t_test, y_test, y_scaler, x_test, test_index,split='TEST')]
+    train_outputs += [_split_output(yt_hat_train, t_train, y_train, y_scaler, x_train, train_index,split='TRAIN')]
     K.clear_session()
 
     return test_outputs, train_outputs
