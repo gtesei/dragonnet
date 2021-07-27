@@ -240,7 +240,7 @@ def run_ihdp(data_base_dir='/Users/claudiashi/data/ihdp_csv', output_dir='~/resu
     simulation_files = sorted(glob.glob("{}/*.csv".format(data_base_dir)))
 
     for idx, simulation_file in enumerate(simulation_files):
-        print("++++",idx,"/",len(simulation_file),"--->",simulation_file)
+        print("++++",idx,"/",len(simulation_files),"--->",simulation_file)
 
         simulation_output_dir = os.path.join(output_dir, str(idx))
 
