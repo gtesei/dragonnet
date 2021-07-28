@@ -282,6 +282,11 @@ def run_ihdp(data_base_dir='/Users/claudiashi/data/ihdp_csv', output_dir='~/resu
                 np.savez_compressed(os.path.join(train_output_dir, "{}_replication_train.npz".format(num)),
                                     **output)
 
+        ##
+        #if (idx>=0):
+        #    print("debug ... ")
+        #    break
+
 
 def turn_knob(data_base_dir='/Users/claudiashi/data/test/', knob='dragonnet',
               output_base_dir=''):

@@ -26,8 +26,8 @@ def load_data(knob='default', replication=1, model='baseline', train_test='test'
     """
 
     #file_path = '../../result/{}/'.format(knob)
-    file_path = '../../result/{}/{}/'.format(knob)
-    data = load(file_path + '{}/{}/0_replication_{}.npz'.format(ihdp_dir,replication, model, train_test))
+    file_path = '../../result/{}/{}/'.format(ihdp_dir,knob)
+    data = load(file_path + '{}/{}/0_replication_{}.npz'.format(replication, model, train_test))
 
     return data['q_t0'].reshape(-1, 1), data['q_t1'].reshape(-1, 1), data['g'].reshape(-1, 1), \
            data['t'].reshape(-1, 1), data['y'].reshape(-1, 1), data['index'].reshape(-1, 1), data['eps'].reshape(-1, 1)
