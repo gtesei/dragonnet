@@ -1,5 +1,5 @@
 import copy
-
+import glob
 from numpy import load
 import argparse
 
@@ -45,16 +45,23 @@ def get_estimate(q_t0, q_t1, g, t, y_dragon, index, eps, truncate_level=0.01):
     return psi_n, psi_tmle, initial_loss, final_loss, g_loss
 
 
-def make_table(train_test='train', n_replication=50,ihdp_dir='idhp'):
+def make_table(train_test='train', n_replication=None,ihdp_dir='idhp'):
     dict = {'tarnet': {'baseline': {'back_door': 0, }, 'targeted_regularization': 0},
             'dragonnet': {'baseline': 0, 'targeted_regularization': 0},
+            'bcaus_dragonnet': {'baseline': 0, 'targeted_regularization': 0},
             'nednet': {'baseline': 0, 'targeted_regularization': 0}}
     tmle_dict = copy.deepcopy(dict)
 
-    for knob in ['dragonnet', 'tarnet']:
+
+    for knob in list(dict.keys()):
         for model in ['baseline', 'targeted_regularization']:
             simple_errors, tmle_errors = [], []
-            for rep in range(n_replication):
+
+            file_path = '../../result/{}/{}/*'.format(ihdp_dir,knob)
+            simulation_files = sorted(glob.glob(file_path))
+            print(knob,"-->FOUND::",len(simulation_files),"simulation files")
+
+            for rep in range(len(simulation_files)):
                 q_t0, q_t1, g, t, y_dragon, index, eps = load_data(knob, rep, model, train_test,ihdp_dir=ihdp_dir)
                 a, b = load_truth(rep, knob,ihdp_dir=ihdp_dir)
                 mu_1, mu_0 = a[index], b[index]
