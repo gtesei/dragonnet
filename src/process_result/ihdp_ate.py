@@ -59,7 +59,7 @@ def make_table(train_test='train', n_replication=None,ihdp_dir='idhp'):
 
             file_path = '../../result/{}/{}/*'.format(ihdp_dir,knob)
             simulation_files = sorted(glob.glob(file_path))
-            print(knob,"-->FOUND::",len(simulation_files),"simulation files")
+            print(knob,"-->FOUND::",len(simulation_files),"simulation files in ",file_path)
 
             for rep in range(len(simulation_files)):
                 q_t0, q_t1, g, t, y_dragon, index, eps = load_data(knob, rep, model, train_test,ihdp_dir=ihdp_dir)
@@ -102,7 +102,7 @@ def main(ihdp_dir='idhp'):
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
-    parser.add_argument('--idhp_data_base_dir', type=str, help="path to directory LBIDD" , default='idhp')
+    parser.add_argument('--idhp_data_base_dir', type=str, help="path to directory LBIDD" , default='ihdp')
 
     args = parser.parse_args()
     main(ihdp_dir=args.idhp_data_base_dir)
